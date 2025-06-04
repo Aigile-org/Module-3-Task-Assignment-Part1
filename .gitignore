@@ -1,3 +1,4 @@
 *.bson
 issues.csv
+issues_limited_user_cols.csv
 /__pycache__/

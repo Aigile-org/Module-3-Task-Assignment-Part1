@@ -1,0 +1,4742 @@
+id	title	description	project_name	status_name	priority_id	type_id	assignee_id	labels
+13205515	Information for not existing page and not having permission to page access	"Information which user sees in case:
+ - If page does not exist user sees 'page not found'
+ - If page exists but user has not access to it user sees 'Permission denied'"	DATALAB	Closed	3	4	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13253746	[EQF][List of resources]: Add possibility to switch between projects	As a user I want to have two have two choices: 1. to work in current project or to work in all projects  on 'List of resources' page, so that it will be more user-friendly during instance creation.	DATALAB	Closed	3	2	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13231274	[Edge]: Extra question on confirmation dialog	"*Preconditions:*
+Environment is created
+
+*Steps to reproduce:*
+1. Go to 'Environment management' page
+2. Click action menu for Edge
+3. Choose Stop action
+
+*Ectual result:*
+There are two questions on confirmation dialog:
+- Do you want to proceed?
+- Are you sure you want to continue?
+ !Edge.png! 
+
+*Expected result:*
+There is one question on confirmation dialog:
+- Do you want to proceed?
+
+
+The same case for notebooks (stop/terminate) on 'environment_management' page
+ "	DATALAB	Open	4	1	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13214390	Add header and close-window buttons to popups	"# Add header to SSN Monitor popup.
+ # Add close button to SSN Monitor popup.
+
+!SSN monitor.PNG!
+
+3. Add close button to library installation error popup.
+
+!library_installation_error_popup.png!"	DATALAB	Closed	3	3	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13260285	[Azure]: Issues on billing page	"*Preconditions:*
+
+1. Env is created
+
+*Steps to reproduce:*
+ # Go to billing page
+ # Click header grid
+
+*Actual result:*
+ # Calendar, buttons are not aligned
+ # Header grid is not extended
+
+*Expected result:*
+ # Calendar has center alignment
+ # Buttons have left alignment
+ # Header grid is extended
+ # There is an error in console"	DATALAB	In Progress	3	1	2149	AZURE, Debian, Front-end, RedHat
+13258776	Add active instances filtering	"Add 'Show all/show Active' buttons on 'Project' page;
+It is should the same functional for the projects as it is implemented for instances on 'resources_list' page"	DATALAB	Closed	3	3	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13205510	URL should be in one row on Notebook name popup	"*Preconditions:*
+
+Notebook with long name is created <Rstudio-tensorflow>
+
+ 
+
+*Steps to reproduce:*
+ # Click Notebook name popup
+
+ 
+
+*Actual result:*
+
+Ungit link is portrayed in two rows
+
+!image-2018-12-19-22-19-27-389.png!
+
+*Expected result:*
+
+1. ungit link should not be splitted in 2 lines (ungit link is portrayed only in one row)/
+2. url is cutted"	DATALAB	Closed	3	1	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13243332	Align action icons for projects	"*Pregonditions:*
+1. Several projects are created
+2. At least one project is failed
+
+Project actions should be aligned in the same column."	DATALAB	Closed	4	3	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13239244	[Front-end]: Ability to set/update project quota	"As an Admin I want to set/update limit per project and general limit, so that I can prevent exceeding determined budget.
+
+*Preconditions:*
+ Admin is logged-in DLab
+ Admin is located in ‘Manage environment’ popup tab on ‘Administration’ page
+
+*Description:*
+ Admin is able to set/udate limit for:
+ Project in text box for project quota 
+ DLab in text box for DLab for total quota
+ Textbox accept only numbers and only integer. 
+ If Admin clicks ‘Apply’ button the quota is confirmed and ‘Manage environment’ popup is closed.
+ If Admin clicks ‘Cancel’ button the quota is not set/update and ‘Manage environment’ popup is closed.
+
+*Acceptance criteria:*
+ 1. Admin is able to set/update quota per project
+ 2. Admin is able to set/update total Dlab quota
+ 3. DLab TOTAL quota prevails (P1)
+ 4. Project quota has second priority (P2). Such that Pr1 + Pr2 <= TOTAL Dlab"	DATALAB	Closed	3	3	2149	Debian, GCP, pull-request-available
+13229381	Instance management should not depend on Edge status	"*Preconditions:*
+ # Computational resource is created for user1
+ # Edge is not created for user2. user2 is Admin
+
+*Steps to reproduce:*
+
+1. Login by user2
+
+*Actual result:*
+
+User2 cannot manage by notebook of user1
+
+*Expected result:*
+
+User2 can manage be notebook of user1"	DATALAB	Closed	3	1	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13205526	Page is blocked during uploading a key	"*Preconditions:*
+ # Only SSN is created
+ # User is logged in DLab
+
+ 
+
+*Steps to reproduce:*
+ # Go to 'Billing Report'  or 'Environment Management' page
+ # Click beyond of reuploading key popup
+
+ 
+
+*Actual result:*
+
+'Billing Report'  or 'Environment Management' page is blocked during
+
+ 
+
+*Expected result:*
+
+'Billing Report'  or 'Environment Management' page isn't blocked during"	DATALAB	Closed	3	1	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13253272	[Terraform][Quota]: Convey error message during cluster creation in case of quota exceeding	"*DLAB-terraform branch*
+
+As a user I want to know why I cannot create a cluster so that I can resolve the situation.
+
+ 
+
+If quota is exceed a user is not allowed to create cluster. Please, inform user about it via error message:
+
+'Operation can not be finished. Resource quote is reached'"	DATALAB	Closed	3	3	2149	AWS, Debian, Front-end, pull-request-available
+13259248	[EQF][Environment management]: Extend filter	"# In 'Type' drop down list it is filtered only by type, but should be also by name on 'environment_management' page
+ # Value in 'user' drop down list should be in lower case in 'environment_management'page
+ # Gear icon should not be cut in 'environment_management' page
+ # Gear icon should be aligned by top value in 'environment_management' page
+ # Filter actions should be in one row in 'environment_management' page
+ # Align grid names with grid values on 'resources_list' page"	DATALAB	Closed	3	3	2149	AWS, AZURE, Debian, DevOps, GCP, RedHat
+13234264	[Front-end]: Ability to terminate a project for admin user	"As an Admin I want to terminate project(s), so that I can rid of unnecessary resources.
+
+ 
+
+*Preconditions:*
+ # Admin is logged-in DLab
+ # Admin is located in ‘Project’  tab on ‘Administration’ page
+ # ‘Manage project’ popup is open
+
+ 
+
+*Description:*
+
+If Admin clicks termination icon in action column confirmation dialog appears ‘Project name’ will be decommissioned. Do you want to proceed?
+
+If Admin clicks ‘Yes’ a project is terminated, confirmation dialog is closed.
+
+If Admin clicks ‘No’ a project is not terminated, confirmation dialog is closed.
+
+*Acceptance criteria:*
+ # Admin is able to terminate a project
+ # Terminated project is absent among the other project
+ # All resources are killed except for VPC (or check if any other project exists in same VPC, if not - delete VPC) and bucket."	DATALAB	Closed	3	3	2149	Debian, Front-end, GCP
+13236882	[Projects]: Reuse library mngmt component for endpoints and groups	"1. Add for endpoints and groups in grid the same component which we have for library
+
+2. Cut too long values
+
+3. Add scrollbar in grid in case if there are more values
+
+4. Cut project name on confirmation dialog for termination (view video in attachments)
+
+5. Add error message for project name text box: 'Project name can only contain letters, numbers, hyphens and '_' but can not end with special characters'
+
+6. 'Select user groups' hint is cut in the down (view 'Select user groups.png' in the attachments)
+
+7. Project name should be case insensitive (view 'Project case insensitive.png' in attachments)"	DATALAB	Closed	3	3	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13241979	[Project creation]: 'Clear' button does not clear label of previous uploading key	"*Preconditions:*
+1. Admin is logged in DLab
+2. At least one endpoint is created
+3. 'Create new project' popup is open
+
+*Steps to reproduce:*
+1. Click 'Upload' button
+2. Chose key.pub
+3. Click 'Open' button
+4. Click 'Clear' button
+
+*Actual result:*
+Clear button does not clear  key.pub value
+Please, view 'Clear button.png' in attachment
+
+*Expected result:*
+Clear button clears  key.pub value
+
+"	DATALAB	Closed	4	1	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13205490	Prevent scheduler submit on turning off scheduler. Error handling should not appear if turn off scheduler	"*Preconditions:*
+1. Notebook is created
+2. ""Resources list"" page is open
+
+*Steps to reproduce:*
+1. click action menu for notebook
+2. choose scheduler
+3. scheduler is disabled
+4. click ""save button""
+
+*Actual result:*
+1. appears error handling 
+2. scheduler popup is open
+
+*Expected result:*
+1. scheduler popup is close
+2. scheduler is disabled"	DATALAB	Closed	3	1	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13241975	Expand validation for group name	"*Preconditions:*
+1. Admin is located on 'Roles' page
+2. At least one endpoint is created
+
+*Tasks:*
+1. Group name should be case insensitive (view 'Case insensitive.png' in attachments). Add error message: 'This group name already exists.'
+2. Cut group name on confirmation dialog for termination (view 'Group name termination.png' in attachments)
+3. Scrollbar should have the same style  (view 'Scrollbar.png' in attachments)"	DATALAB	Closed	3	3	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13214691	[Generate key]: 'Initial infrastructure creation' popup does not appear until clicking 'Refresh' button	"*Preconditions:*
+1. User is logged in DLAB
+
+Steps to reproduce:
+1. Click 'Generate' button
+2. Click 'Save' button
+
+*Actual result:*
+1. Initial infrastructure creation' popup does not appear until clicking 'Refresh' button
+
+*Expected result:*
+Initial infrastructure creation' popup  appears"	DATALAB	Closed	3	1	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13247851	[Front-end]: Adjust project and endpoint tags	"Project tag should contain only the value of project name.
+ Endpoint tag should contain onle the value of endpoint name.
+
+
+*UI tasks:*
+*1.* Rid of 'dlab-' in 'Project tag' text box
+*2.* Make 'Project tag' text box not editable
+*3.*  'Endpoint tag' text box should contain the value of 'Name' text box by default
+4. 'Endpoint tag' should be not editable"	DATALAB	Closed	3	3	2149	AWS, Debian, Front-end, GCP, RedHat, pull-request-available
+13253727	Do not convey custom_tag in case of its value is empty	Custom_tag should not be portrayed on 'list of resources' page if custom_tag value is empty.	DATALAB	Closed	4	3	2149	AWS, AZURE, Debian, DevOps, GCP, RedHat
+13205499	"Extra vertical scrollbar for six users on Manage popup"""	"*Preconditions:*
+Six users has at least one running instance
+
+*Steps to reproduce:*
+1. Go to Health status page
+2. Click on 'Manage enironment button
+
+*Actual result:*
+Extra vertical scrollbar appears
+
+*Expected result:*
+There is no extra vertical scrollbar"	DATALAB	Closed	5	1	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13253723	Cluster name should be unique per notebook	"*1.* Add check for unique *computational resource* name per notebook.
+If computational resource name is not unique add *error message*: 'This name already exists.'
+
+ "	DATALAB	Closed	3	3	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13254171	[GCP][Resource list]: Align actions icon according to gear	Align actions icon according to gear in grid (see attachment)	DATALAB	Closed	4	3	2149	Debian, Front-end, GCP, RedHat
+13209963	[Apache Zeppelin]: Add info concerning change of spark default configuration from DLab UI	"Currently Spark default configuration can be change directly through Apache Zeppelin interpreter menu NOT from DLab UI.
+
+Please, add this infor nearby configuration textbox fro Apache Zeppelin
+
+Link for release notes: https://docs.google.com/document/d/15iJkog3v4SEX76Y2ODaIQ1LtDclKNxUYxBEnXFFen5o/edit#"	DATALAB	Closed	3	3	2149	Debian, Front-end, RedHat
+13251182	Clear grid value during wrong filter	"If filter is wrong the value of grid should be cleared.
+And change information error from *To start working, please, create new environment* to *No matches found*"	DATALAB	Closed	3	3	2149	AWS, AZURE, Debian, Front-end, RedHat, pull-request-available
+13259029	[Billing page]: Drop down list is under (crossed by) grid	"*Preconditions:*
+
+1. Billing is not available
+
+*Steps to reproduce:*
+ # Go to Billing page
+ # Click any drop down list
+
+*Actual result:*
+
+1. Drop down list are under grid
+
+*Expected result:*
+
+1. Drop down list are over grid"	DATALAB	Closed	4	3	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13269544	[List of Resource]: Extend instance statuses in 'Show active' mode	"Show active operation should convey instances which are in the following statuses:
+
+-running
+
+-stopping
+
+-stopped
+
+-creating
+
+-configuring
+
+-starting
+
+ "	DATALAB	Closed	4	3	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13205655	"[GCP]: Error message is beyond of ""Add computational resources"" popup"	"*Preconditions:*
+1. Notebook is created
+2. ""Add computational resources"" popup is opne
+
+*Steps to reproduce:*
+1. choose Dataproc cluster in ""Select cluster type"" drop down list
+2. check off ""Preemptible node count"" check box
+3. enter not valid vulue for ""Preemptible node count""? for example 23
+
+*Actual result:*
+error message ""Only integer values greater than or equal to 0 and less than 11 are allowed"" beyond of ""Add computational resources"" popup
+
+!image-2018-12-20-10-39-28-981.png!
+
+*Expected result:*
+error message ""Only integer values greater than or equal to 0 and less than 11 are allowed"" appers under ""Preemptible node count"" text box"	DATALAB	Closed	4	1	2149	Debian, Front-end, GCP
+13253276	Augment tooltip to project name on  Manage environment popup	"The project names have the same names (after cutting) if project names are too long and have the same beginning.
+
+Please, add tooltip to project name on 'Manage environment' popup"	DATALAB	Closed	4	3	2149	AWS, AZURE, Debian, GCP, RedHat
+13249108	Data Engine template should be available for adding to GPU instances	For GPU instances only spark standalone cluster should be available for adding.	DATALAB	Closed	3	3	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13246805	[Billing]: Align values in grid	"*1.* Actions for filter should be aligned from the left  side according to 'Service Charges'
+*2.* Total sum should have tha same space from the left side as other charde values
+*3.* Align vertically all values in rows."	DATALAB	Closed	4	3	2149	AWS, Debian, RedHat, pull-request-available
+13241514	[Front-end]: Allow to add endpoint to existing project	"It is impossible to add new endpoint to existing project.
+
+Please implement possibility ONLY to add (not remove) endpoint to existing project."	DATALAB	Closed	3	3	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13205656	[Billing Report]: User's value in dropdown list should be in lower case	"*Preconditions:*
+1. environment is created
+2. billing is available
+3. ""Billing Report"" page is open
+
+Steps to reproduce:
+1. click ""select user"" drop down list
+
+*Actual result:*
+User's value is in lower and upper case
+
+!image-2018-12-20-10-48-01-520.png!
+
+ 
+
+*Expected result:*
+User's value is in lower case"	DATALAB	Closed	4	1	2149	AZURE, Debian, Front-end, RedHat
+13227214	[AWS][GCP]:Convey cluster version on Data Engine Service popup	"As a user I want to have a possibility to view a version of Data Engine Service which is deployed from DLab UI on AWS and GCP
+
+ 
+
+*Acceptance criteria:*
+
+1.  there is a version of Data Engine Service in 'Cluster type' textbox on cluster popup
+
+AWS EMR cluster, v.X.X.X"	DATALAB	Closed	4	4	2149	Debian, Front-end, GCP, RedHat, pull-request-available
+13231250	UI changes for scheduler	"*1.* Adjust error messages or disable 'Save' button if mandatory fields are not filled or filled by invalid data:
+ !inactivity dot.png! 
+ !inactivity empty.png! 
+ !scheduler by time date emty.png! 
+
+*2.* Rename radio button 'In case of running jobs on Spark standalone, notebook stop scheduler will not be trigger 'In case of running jobs on Spark standalone, notebook stop scheduler will not be triggered'
+
+*3.* Choose start date/choose finish date/radio button 'Use even...' are disabled if scheduler by time was set before.
++Preconditions:+
+Scheduler by time is turn on
++Steps to reproduce:+
+1. Open scheduler
+Please, view video ''Scheduler.mp4 in attachments"	DATALAB	Closed	3	1	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13205498	Notebook termination should convey the future status of previously stopped cluster on confirmation dialog	"*Preconditions:*
+1. spark standalone cluster is in stopped status
+2. ""Resources list"" page is open
+
+*Steps to reproduce:*
+1. click action menu for notebook
+2. choose terminate notebook
+
+*Actual result:*
+In confirmation dialog is absent that stopped cluster will be terminated
+
+*Expected result:*
+In confirmation dialog informst that stopped cluster will be terminated"	DATALAB	Closed	3	1	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13210153	The warning updates for user only after second login if admin adjusts the quota	"*Preconditions:*
+1. two users have environments
+2. quota is set for budjet (user has already used his quota)
+
+*Steps to reproduce:*
+1. update quota (increase limit)
+
+*Actual result:*
+1. after the first login the warning is not updated (it is previous quota value)
+2. after the second login the warning is updated
+
+!warning.PNG!
+
+*Expected result:*
+after the first login the warning is updated
+
+*****************************************************************************
+Rename button from 'Create' to 'Apply' on 'Manage environment' popup"	DATALAB	Closed	3	1	2149	AZURE, Debian, Front-end, RedHat
+13205500	[Add computational resources]: UI improvements	"*1.* Rename label from ""Your bid for spot instance, %"" to ""Spot instance bit, %""
+
+*2.* ""Configurations"" check box rename to ""Cluster configuration template, JSON""
+
+*3.* Divide 'Add computational resources' into two columns:
+*3.1.* for Spark cluster move ""Total node number"" and ""Node shape"" into the second (right) side. ""Cluster configuration template, JSON"" check box with input value should be above all drop downs list 
+*3.2.* for EMR cluster move ""Total instance number"", ""Master instance shape"" and ""Slave instance shape""into the second (right) side. ""Cluster configuration template, JSON"" check box with input value should be above all drop downs list and ""Spot instance bit, %"""	DATALAB	Closed	3	4	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13205567	It should be impossible to stop Data Engine during notebook image creating on 'environment management'	"A bug was found during notebook image creating on environment management page
+
+ 
+
+*Preconditions:*
+ # Notebook is created
+ # Spark cluster on notebook is created
+
+ 
+
+*Steps to reproduce:*
+ # Create custom image from notebook
+ # Go to environment management page
+
+*Actual result:*
+
+The icon to stop spark cluster on notebook is enabled
+
+*Expected result:*
+
+The icon to stop spark cluster on notebook is disabled"	DATALAB	Closed	4	1	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13205484	"[Chrome]: After creating edge any actions is not available (except for ""Git credentials"") until press ""f5"""	"*Preconditions:*
+1. SSN is created
+2. DLab is open in Chrome
+
+*Steps to reproduce:*
+1. create edge node
+2. click ""Creaye new"" button
+
+*Actual result:*
+""Create analytical tool"" popup does not appear
+
+*Expected result:*
+""Create analytical tool"" popup appears"	DATALAB	Closed	3	1	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13205519	Rendering issues on 'Reporting' page (only in Firefox browser)	"*Preconditions:*
+ # Environment is creted more than one day ago
+
+*Steps to reproduce:*
+ # Got to 'Reporting' page
+
+*Actual result:*
+
+Two vertical lines are absent for 'status' column
+
+!image-2018-12-19-22-40-08-460.png!
+
+*Expected result:*
+Two vertical lines are present for 'status' column"	DATALAB	Closed	4	1	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13271657	Distinguish endpoint and edge node  on DLab UI	"# On 'Project' page should be:
+ 1.1 'Edge node status' instead of 'Endpoint status' labels
+ 1.2. Change the following edge edge node status:
+ connecting - creating
+ connected - running 
+ disconnecting - stopping 
+ disconnected - stopped
+ terminated - terminated
+ terminating - terminating
+ # Change confirmation dialog on 'Connect endpoint' popup:
+ *from:* '<endpoint_name> will be decommissioned.
+ Do you want to proceed?'
+ *to:* Endpoint<endpoint_name> will be disconnected.
+ Do you want to proceed?"	DATALAB	Closed	3	3	2149	2.3_old, AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13267731	[Front-end]: Custom image should be unique per project	"Now custom image should be unique per user, but it should be per project.
+
+If custom image name already exists an error message should appear: 'This name already exists in project'"	DATALAB	Closed	3	3	2149	AWS, AZURE, Back-end, Debian, GCP, RedHat, pull-request-available
+13268000	[Group adding]: Role drop down list extends for all monitor width	"*Preconditions:*
+
+1. Environment is created
+
+*Step to reproduce:*
+ # Go to 'Roles' page
+ # Click 'add group' button
+ # Enter valid group name in text box
+ # Click 'Next >' button
+ # Click 'Next >' button again
+ # Choose any available role in drop down list
+ # Click 'Role' drop down list
+
+*Actual result:*
+
+1. Role drop down list extends for all monitor width
+
+*Expected result:*
+
+1. role drop down list is not extended by width
+
+ "	DATALAB	Closed	3	1	2149	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13228121	Convey Edge IP on DLab UI	"If  a notebook is not created user can not find out an Edge IP from Dlab UI.
+
+Please convey IP for Edge on Dlasb UI."	DATALAB	Closed	4	3	2149	AWS, AZURE, Back-end, Debian, GCP, RedHat, pull-request-available
+13205483	[GCP]: Prevent adjusting total budget/user limit and cluster configurations for Dataproc	"Currently billing is not available on GCP. 
+1. Please, remove possibility of managing quota for DLab per user and total.
+2. Remove ""Cluster configuration"" for Dataproc"	DATALAB	Closed	2	3	2149	Debian, Front-end, GCP
+13205647	"Autofocus should be on Cluster configuration template, JSON"" after checking off ""cluster configurations"" check box"""	"As a user I want to have autofocus on ""Cluster configuration template, JSON"" text box if I check off ""custer configuration"" check box
+
+*Acceptance criteria:*
+
+1. if user checks off ""custer configuration"" check box a scrollbar goes down by automatically in front of ""Cluster configuration template, JSON"" text box"	DATALAB	Closed	3	3	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13254181	Group name should be case insensitive	"*Preconditions:*
+1. Admin is located on 'Roles' page
+
+
+
+*Tasks:*
+1. Group name should be case insensitive. Add error message: 'Group name already exists.'"	DATALAB	Closed	4	3	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13243351	Convey project name  to BE in case of spark cluster starting	Start cluster does not start without value of project name.	DATALAB	Closed	3	3	2149	AWS, Debian, Front-end, GCP, RedHat
+13218912	[Environment management]: Add possibility to filter items by values 	As an admin I want to filter by values on 'Environment management' page, so that I can quickly find necessary information.	DATALAB	Closed	3	4	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13214174	Replace picker date component on 'Billing report' page	"Current picker date component has been not supported yet.
+Find new one and replace picker date component by another."	DATALAB	Closed	3	3	2149	AZURE, Debian, Front-end, RedHat
+13258727	Remove 'Backup', 'SSN Monitor' buttons	"Do not display 'Backup', 'SSN Monitor' buttons on DLab UI.
+
+It is caused by the following::
+
+1. Backup does not work
+
+2. SSN Monitor is useless information now"	DATALAB	Closed	4	3	2149	AWS, AZURE, Debian, GCP, RedHat
+13210081	[Manage Environment]: Extra space between user and total budget	"*Preconditions:*
+1. Edge for one user is created
+2. ""Environment Health Status"" page is open
+
+*Steps to reproduce:*
+1. click ""Manage Environment"" button
+
+*Actual result:*
+distance between user and total budget is too extra
+
+!Manage environment.PNG!
+
+*Expected result:*
+decrease distance between user and total budget"	DATALAB	Closed	4	1	2149	AZURE, Debian, Front-end, RedHat
+13223099	Back-end	"*Preconditions:*
+ # User (not Admin) is logged in Dlab
+ # 'Environment management' page is open
+
+ 
+
+*Steps to reproduce:*
+ # Click action menu for edge
+ # Choose stop action
+ # Hit 'Yes' on confirmation dialog
+
+ 
+
+*Actual result:*
+ # User is logged out:
+
+!401(F12).PNG!
+
+!User not authorized.PNG!
+
+ 
+
+*Expected result:*
+ # Edge status is 'stopping'
+ # User is in 'Environment management' page"	DATALAB	Closed	3	7	2149	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13255868	[Computational resources]: Do not break link in several rows	If link is too long cut it in order to locate the link in one row.	DATALAB	Closed	4	3	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13205482	[Manage environment]: Action does not submit because of not correct value passing	"*Preconditions:*
+1. Edge is created (in running status)
+2. ""Environment health status"" page is open
+
+*Steps to reproduce:*
+1. click ""Manage environment"" button
+2. click ""Stop"" or ""Terminate"" icon
+
+*Actual result:*
+appears message ""Environment of [object Object] will be stopped"" on confirmation dialog
+
+*Expected result:*
+1. appears message ""Environment of <username> will be stopped"" on confirmation dialog . Instead of <username> should be value of username whose environment will be stopped or terminated"	DATALAB	Closed	3	1	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13269865	[Manage environment popup]: Extend validation for project stopping/termination	"If al resources are stopped or terminated (including edge) the icons are available for stopping/termination, but should be disabled. 
+
+If  icons are disabled add a hint 'There is not any active instance'. 
+PS you are free to change the contest hint.
+GET /api/project/managing"	DATALAB	Closed	4	3	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13205516	Investigate updating node version js and dependencies	Investigate possibility to update node version js.If it can be implemented please update node version js and dependencies.	DATALAB	Closed	3	3	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13258566	[EQF]: Project issues	"# If all edges are  terminated  icons terminate should be disabled. 
+ # Endpoint which is assigned to a project should be marked and NOT be editable in edit project popup
+ # If it is only one edge on project should be only one icon for terminate
+ # Name edge column 'Endpoint status'"	DATALAB	Closed	3	3	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13218134	Warning concerning limit is absent	"*Preconditions:*
+ # Billing is available
+
+ 
+
+*Steps to reproduce:*
+ # Set limit from 75% to 99% of actually used
+ # Logout
+ # Login
+
+ 
+
+*Actual result:*
+
+Warning concerning limit (that user is closed to quota ) is absent
+
+ 
+
+*Expected result:*
+
+Warning concerning limit (that user is closed to quota ) is present"	DATALAB	Closed	3	1	2149	AZURE, Debian, Front-end, RedHat, pull-request-available
+13270106	Get rid of some actions for Superstet template	"*Prevent the following actions:*
+1. add computational resources
+2. library management
+3. Spark configuration/reconfiguration
+
+*Leave the following actions:*
+1. stop/start/terminate
+2. scheduler
+3. web-terminal"	DATALAB	Closed	3	3	2149	Debian, GCP, pull-request-available
+13251001	Project request is absent on project page until refresh the page (F5)	"*Preconditions:*
+1. SSN is created
+
+*Steps to reproduce:*
+1. Create project
+2. Go to another page
+3. Return to project page
+
+*Actual result:*
+Project is not visible until refresh the page (F5)
+
+*Expected result:*
+Project is visible
+
+This bug is reproduced randomly"	DATALAB	Closed	3	1	2149	AWS, pull-request-available
+13247038	[Billing report page][Firefox][Microsoft Edge]: Grid lines are absent for environment name and service charges columns	"*Preconditions:*
+1. Billing is available
+
+*Steps to reproduce:*
+1. Go to 'Billing report' page
+
+*Actual result:*
+Grid lines are absent only for environment name and service charges columns
+
+*Expected result:*
+Grid lines are present for all columns"	DATALAB	Closed	4	1	2149	AWS, Debian, RedHat
+13254260	[Manage libraries]: Remove extra expansion of the library list on installing process	Please, see attachment	DATALAB	Closed	4	3	2149	AWS, Azure, Debian, Front-end, GCP, RedHat
+13251003	Prevent notebook action depending on status of computational resource	"Prevent notebook action (stop/terminate) if at least one of related computational resource is in '-ing' status:
+- creating
+- configuring
+- starting
+- stopping
+- terminating
+- reconfiguring"	DATALAB	Closed	3	3	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13264770	[Front-end]: Pass user/project/endpoint/custom tags on 'Billing Report' page	As a user I want to see all types of tags on 'Billing report' page so that I can swiftly determine the descriptions which are associated with tags.	DATALAB	Closed	3	3	2149	AWS, AZURE, Ba, Debian, RedHat, pull-request-available
+13229035	[Azure][Data Lake]: It is impossible to login DLab	"*Preconditions:*
+1. SSN is created with Data Lake
+
+*Steps to reproduce:*
+1. Click button 'Login with Azure' 
+
+*Actual result:*
+User is  not logged in DLab
+
+*Expected result:*
+User is logged in DLab
+
+Also the bug is reproduced if enter valid credentials and click 'Login' button."	DATALAB	Closed	3	1	2149	AZURE, Debian, Front-end, RedHat, pull-request-available
+13214188	Public.key name should not be beyond of 'Create initial infrastructure' popup	"*Preconditions*:
+
+1. User is logged into DLab Web Application
+
+2. ""Create initial infrastructure"" popup is open
+
+ 
+
+*Steps to reproduce:*
+ # Click 'Upload' button
+ # Choose  public.key with too long name
+ # Click 'Create' button
+
+*Actual result*: 
+
+Public.key is shown beyond of 'Create initial infrastructure' popup.
+
+*Expected result*: 
+
+Public.key is not shown in 'Create initial infrastructure' popup."	DATALAB	Closed	3	1	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13246561	[GCP][Dataproc]: It is impossible to create dataproc	"*Preconditions:*
+1. Jupyter/RStudio/Zeppelin is in running status
+2. User is located on 'resources_list' page
+
+*Steps to reproduce:*
+1. Click action menu for notebook
+2. Choose 'Add compute'
+3. Choose Dataproc cluster in 'Select cluster type' drop down list
+4. put valid values for Dataproc creation
+5. Click 'Create' button
+
+*Actual result:*
+Dataproc is not created
+
+*Expected result:*
+Dataproc is created"	DATALAB	Closed	2	1	2149	Debian, Front-end, GCP, pull-request-available
+13264237	[Project page]: Issues with endpoint status	"1. Disable endpoint removing from project during 'connecting' 
+
+2. Value of endpoint status should have left alignment
+
+3. Show active should not show 'Failed' endpoint status
+
+4. 'No details'   should have left alignment in 'Endpoint' column
+
+5. Disable endpoint removing from project if endpoint is in 'failed' status"	DATALAB	Closed	4	3	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13272419	Update content on promotion page	"Links  to promotion page:
+
+ [https://dlab.apache.org/]
+
+[https://dlab.incubator.apache.org/]"	DATALAB	Closed	3	3	2149	Front-end
+13243358	Remove extra scrollbar from spark cluster name popup	"*Preconditions:*
+1. Spark is created and in running status
+2. Spark cluster popup is open
+"	DATALAB	Closed	4	3	2149	AWS, Debian, Front-end, RedHat
+13205642	"Information message should be center aligned on ""Manage git credentials"" popup"	"*Preconditions:*
+1. environment is created
+2. git credential is not set up in Dlab
+
+*Steps to reproduce:*
+1. click ""Git credentials"" button
+2. click ""List"" tab
+
+*Actual result:*
+""You have no related accounts"" is left aligned
+
+!image-2018-12-20-10-17-31-101.png!
+
+*Expected result:*
+""You have no related accounts"" center aligned"	DATALAB	Closed	4	1	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13268535	[Scheduler]: Add timezone parameter to scheduler select 	'Select offset' label -> 'Select time zone' label	DATALAB	Closed	4	3	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13205664	[Quota]: Add error message for Notebook/Spark Standalone cluster starting if resource quote is reached	"*Preconditions:*
+1. user's environment is stopped except for Edge node
+2. user's quato/total budget is reached
+3. user is logged in DLab
+
+*Steps to reproduce:*
+1. go to ""resource list"" page
+2. click action menu for notebook
+3. choose start action
+
+*Actual result:*
+Error message is absent
+
+*Expected result:*
+Appears error message:
+Should be the same error message as for Edge, except for ""Edge""
+""Oops!
+Instance running failed""
+
+*or*
+
+""Oops!
+Instance running failed. Resource quote is reached""
+
+*or*
+
+""Oops!
+Operation can not be finnished. Resource quote is reached""
+
+Currently error message is absent for starting notebook and computational resources"	DATALAB	Closed	4	1	2149	AZURE, Debian, Front-end, RedHat
+13212601	Upload key is offered for previous login user NOT current	"*Preconditions:*
+ 1. for user1 edge is created
+ 2. for user2 edge is not created
+
+*Steps to reproduce:*
+ 1. log in with user2
+ 2. log out with user2
+ 3. log in with user1
+  
+
+*Actual result:*
+ upload key is offered for user1
+  
+
+*Expected result:*
+ upload key is NOT offered for user1, because edge is already created for the user1
+
+ 
+
+ "	DATALAB	Closed	3	1	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13256279	[Environment Management page]: Align 'gear' according to other top icons	All icons should be on the same top level in grid on 'Environment Management' page.	DATALAB	Closed	4	3	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13211700	First rendering of notification dialogs works with delay	"A bug reproduces only at first time or after clear browsing data.
+
+*Precondirions:*
+ 1.Edge is running
+ 2. 'Manage environment' popup is open
+
+*Steps to reproduce:*
+ 1. Click 'stop' or 'terminate' for running environment
+
+*Actual result:*
+ Name of user environment displays with delay 
+ Please, see attachment
+
+!Environment.PNG!
+
+*Expected result:*
+ Name of user environment displays simultaneously with dialog window
+
+!Environment 2.PNG!
+ _____________________________________________________________________
+
+ "	DATALAB	Closed	4	1	2149	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13268602	[Scheduler]: 400 error causes auto log out	"*Preconditions:*
+ # Notebook/cluster are created
+ # Scheduler pop up is open
+
+*Steps to reproduce:*
+ # Turn on scheduler by time
+ # Click 'Save' button
+
+*Actual result:*
+
+1. User is auto logged out
+
+*Expected result:*
+
+1. User is not auto logged out"	DATALAB	Closed	3	1	2149	AWS, AZURE, Debian, GCP, RedHat
+13243342	Adding/removing group from project should not change project status	"*Preconditions:*
+1. Project is created
+2. Admin is located on 'project' page
+
+*Steps to reproduce:*
+1. Click edit action for project
+2. Add or remove group
+3. Click update
+
+*Actual result:*
+Project status changes from 'Active' to 'Creating'
+
+*Expected result:*
+Project status does not changed"	DATALAB	Closed	3	1	2653	AWS, Back-end, Debian, GCP, RedHat
+13241512	[Back-end]: Allow  to add endpoint to existing project	"It is impossible to add new endpoint to existing project.
+
+Please implement possibility ONLY to add (not remove) endpoint to existing project."	DATALAB	Closed	3	3	2653	AWS, AZURE, BackSlash, Debian, GCP, RedHat
+13247073	[Billing report page]: Convey some values for billing grid	"1. Convey 'Bucket' for all buckets in 'resource type' drop down
+2. Convey 'Edge Node' for all edge nodes in 'resource type' drop down
+3. Convey volume for all edge node volumes in 'resource type' drop down
+4. Convey shape for all edge nodes in 'shape' drop down
+
+Please, see attachment"	DATALAB	Closed	4	1	2653	AWS, Back-end, Debian, RedHat, pull-request-available
+13247664	Double command execution (for now 'cd' ) causes closing web terminal or logging out from DLab	"Double execution the *cd* command causes closing web terminal or logging out in Firefox/Chrome/Opera/Microsoft Edge browsers.
+Please, see the video in the attachment."	DATALAB	Closed	3	3	2653	AWS, Back-end, Debian, GCP, RedHat
+13255672	[Spark cluster]: 'Sync_start-required' should not be rewrite after turning on scheduler by inactivity 	"*Preconditions:*
+1. Spark cluster is created
+
+*Steps to reproduce:*
+1. Turn on  scheduler by inactivity for Spark cluster
+2. Turn on scheduler by time for Spark cluster
+
+*Actual result:*
+1. Choose start date is not editable
+2. Choose start time is not editable
+3. Select offset is not editable
+
+*Expected result:*
+1. Choose start date is editable
+2. Choose start time is editable
+3. Select offset is editable"	DATALAB	Closed	3	1	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13244994	[Environment management]: Resources are not visible if project status is 'Not Active'	"*Preconditions:*
+1. Notebooks are created in project1
+
+*Steps to reproduce:*
+1. Stop project1
+2. Go to 'Environment management' page
+
+*Actual result:*
+Notebooks from project1 is not visible
+
+*Expected result:*
+Notebooks from project1 is visible"	DATALAB	Closed	3	1	2653	AWS, Back-end, Debian, GCP, RedHat
+13238552	[Project tag]: Once new Endpoint is associated with the project - assign project tag to newly associated Endpoint	"*Project_tag:*
+
+o    manual input from Web UI
+
+o    assigned to notebooks, clusters, including Service data engines
+
+project tag can not be changed once project got created
+
+ 
+
+Instances are created per project. Add project_tag to all instances which are created in this project.
+
+So that once project is created - tag all project infrastructure with project tag.
+
+ 
+
+Example:
+
+Admin created Project1 with *project_tag:Project1* and assign Endpoint1 to that project
+ - All resources within Endpoint (notebook, cluster) obtain additional tag *project_tag:Project1.***
+
+Admin created Project 2 with *project_tag:Project2* and assign Endpoint1 to that project
+ - All resources within Endpoint (notebook, cluster) obtain additional tag *project_tag:Project2.*
+
+ "	DATALAB	Closed	3	3	2653	AWS, Debian, RedHat
+13205559	[GCP]: 'View Full billing Report For All Users' value should be absent in 'role' drop down list on 'Manage Roles' popup	"*Preconditions:*
+ # SSN is created
+ # 'Manage roles' popup is open
+
+ 
+
+*Steps to reproduce:*
+ # Click 'role' drop down list
+
+ 
+
+*Actual result:*
+
+'View Full billing Report For All Users'  is present in drop down list
+
+*Expected result:*
+
+'View Full billing Report For All Users'  is absent in drop down list"	DATALAB	Closed	4	1	2653	Back-end, Debian, GCP
+13205551	Value of used space is not true on HDD tab	"A bug was found on AWS. 
+
+ 
+
+*Preconditions:*
+
+1. Edge is created
+
+2. 'Health status' page is open
+
+ 
+
+*Steps to reproduce:*
+ # Click 'SSN Monitor' button
+ # Go to HDD tab 
+
+ 
+
+*Actual result:*
+1. Disk value of 'used space' is more than 'total space'
+
+!image-2018-12-19-23-37-20-249.png!
+
+!image-2018-12-19-23-37-39-528.png!
+
+*Expected result:*
+
+1. Disk value of 'used space' is less than 'total space'
+
+2. Disk value of 'used space' matches the result value to command *df*"	DATALAB	Closed	3	1	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13251597	[Keycloak]: Auto logout triggers every 6 minutes	"*[DLAB-terraform|https://github.com/apache/incubator-dlab/tree/DLAB-terraform]* branch
+
+*Preconditions:*
+
+1. user1 is logged in DLab
+
+*Steps to reproduce:*
+ # Wait 6 minutes after login
+ # Click any action on DLab page (except for logout)
+
+*Actual result:*
+
+User1 is logged out
+
+*Expected result:*
+
+User1 is logged in DLab"	DATALAB	Closed	3	1	2653	AWS, Back-end, Debian
+13259922	[Terraform][KeyCloak][GCP]: Project value is absent in grid  on 'Environment management' page	"*Preconditions:*
+
+1. Environment is cretaed
+
+*Steps to reproduce:*
+
+1. Go to 'Environment management' page
+
+*Actual result:*
+
+1. Project value is absent in grid
+
+*Expected result:*
+
+1. Project value is present in grid"	DATALAB	Closed	3	1	2653	GCP
+13261043	Add validator to key	Add validator to the end of key for symbols < \n>.	DATALAB	Closed	3	3	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13243602	[AWS]: User can not create Data Engine Service	"*Preconditions:*
+1. Notebook (Zeppelin/Rstudio or Jupyter) is created
+2. EMR popup creation is open
+
+*Steps to reproduce:*
+1. Put valid data for EMR creation
+2. Click 'Create' button
+
+*Actual result:*
+EMR creation popup is not closed
+EMR is not  created
+
+*Expected Result:*
+EMR creation popup is closed
+EMR is created"	DATALAB	Closed	3	1	2653	AWS, Back-end, Debian, RedHat
+13258498	[EQF]: Terminated project is proposed for notebook creation	"*Preconditions:*
+
+1.  User1 is assigned to a terminated notebook
+
+2. User1 is located on 'List of resources' page
+
+*Steps to reproduce:*
+ # Click '+Create new' button
+ # Click 'Select project' drop down list
+
+*Actual result:*
+
+Terminated project is in drop down list
+
+*Expected result:*
+
+Terminated project is not in drop down list
+
+ 
+
+*NOTE:* If Edge status is stopped/terminated/creating/stopping/terminating in a project (and no one edge status is NOT in running status) do not convey this project in  'Select project' drop down list."	DATALAB	Closed	3	1	2653	Back-end, Debian, GCP
+13234644	Convey IP notebook in separate field	Back-end should convey  to Front-end an IP notebook in separate field.	DATALAB	Closed	3	3	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13221677	[Azure]: Rarely  template Apache Zeppelin is not available after SSN creation 	"SSN was created on Azure (debian) without Data Lake
+
+*Preconditions:*
+
+1. Edge is created
+
+ 
+
+Steps to reproduce:
+ # 'Resource list' page is open
+ # Click 'Create new' button
+
+ 
+
+*Actual result:*
+
+Template Apache Zeppelin is absent
+
+ 
+
+*Expected result:*
+
+Template Apache Zeppelin is present
+
+ 
+
+*** Template Apache Zeppelin will be enabled if restart UI
+
+ 
+
+ "	DATALAB	Closed	4	3	2653	AZURE, Back-end, Debian, RedHat
+13205545	[Autotest]: Edge creation fails due to not valid of username or password	"*Steps to reproduce:*
+
+1. Run integration test on AWS/Azure/GCP
+
+ 
+
+*Expected result:*
+
+Edge creation fails:
+
+[http://35.166.222.81/job/AutoTests_AWS/256/consoleFull]
+
+[http://35.166.222.81/job/AutoTests_Azure/186/consoleFull]
+
+[http://35.166.222.81/job/AutoTests_GCP/96/consoleFull]
+
+ 
+
+*Actual result:*
+
+Autotest runs successfully"	DATALAB	Closed	3	1	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13205573	[Admin page]: Ability to choose certain instance shapes for computational resources per group via Dlab UI	As an admin I want to add/remove certain user in/from group or particular group in order to choose certain instance shapes for computational resources per group via Dlab UI.	DATALAB	Closed	3	4	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13237434	Roles are not synched up with users or groups	"*Preconditions:*
+ # grp1 is allowed to to do administration operation
+ # '$anyuser' group is deleted
+
+*Steps to reproduce:*
+
+1. Login by user from grp1
+
+*Actual result:*
+
+it is forbidden for user to do adminiastration operations
+
+*Expected result:*
+
+It is allowed for user to do adminiastration operations"	DATALAB	Closed	3	1	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13251841	[Terraform branch]: Project stopping/termination fail	"*Preconditions:*
+
+1. Project is created
+
+*Steps to reproduce:*
+
+1. Stop/terminate project
+
+*Actual result:*
+
+Project stopping/termination fails due to parameter *conf_service_base_name*
+
+*Expected result:*
+
+Project stopping/termination is successful"	DATALAB	Closed	3	1	2653	AWS, Back-end, Debian
+13238851	[User tag]: Once Notebooks, Clusters are created - pass User tag to DevOps	"* *_user_tag:_*
+
+o    _Autogenerated_
+
+o    _format: [user_name@domain.com]_
+
+o    _assigned to notebooks, clusters, including Service data engines_
+
+ 
+ # _Admin created Endpoint1 with *endpoint_tag:Endpoint1*_
+ # _All resources within Endpoint (notebook, cluster) obtain*endpoint_tag:Endpoint1*_
+ # _Admin created Project1 with *project_tag:Project1* and assign Endpoint1 to that project_
+ # _All resources within Endpoint (notebook, cluster) obtain additional tag *project_tag:Project1*_
+ # _User1 created notebook within Project1 with custom*custom_tag:Custom1*_
+ # _That notebook obtains: *endpoint_tag:Endpoint1, project_tag:Project1, user_tag:[User_Name1@domain.com|mailto:User_Name1@domain.com], custom_tag:custom1*_
+ # _Admin created Project 2 with *project_tag:Project2* and assign Endpoint1 to that project_
+ # _All resources within Endpoint (notebook, cluster) obtain additional tag *project_tag:Project2*_
+ # _User1 creates notebook within Project2 with custom*custom_tag:Custom2*_
+ # _That notebook obtains: *endpoint_tag:Endpoint1, project_tag:Project2, user_tag:[User_Name1@domain.com|mailto:User_Name1@domain.com], custom_tag:custom2*_"	DATALAB	Closed	3	3	2653	AWS, Back-end, Debian, RedHat
+13254708	[AWS][DLAB-terraform][KeyCloak]: Billing is not updated on DLab UI	"*Preconditions:*
+
+1.  Env is created
+
+2. Billing is loaded in S3
+
+*Steps to reproduce:*
+
+1. Go to 'Billing report' page
+
+*Actual result:*
+ # Billing is not available on 'Billing report' page
+ # Detailed billing is not available
+
+*Expected result:*
+ # Billing data is available on DLab UI
+ # Detailed billing is available
+
+*******************************************
+ # Shape is absent for edge node on 'billing page'
+ #  Start/End dates are absent on detailed billing"	DATALAB	Closed	2	1	2653	AWS
+13215245	[Billing]: Value for shared resources should be named in user dropdown list	"There empty values in user dropdown list for SBN, SSN-bucket, shared-bucket.
+Value of 'Shared resource' should be in this empty values.
+ !Billing.PNG! "	DATALAB	Closed	4	3	2653	AZURE, Back-end, Debian, RedHat, pull-request-available
+13205501	[Add computational resources]: Alter and prevent passing some values to front-end side	"# Remove descriptions: ""Apache Spark standalone cluster"", ""Image for EMR provisioning""
+ # Rename templates names from ""Apache Spark cluster"" to ""Apache Spark standalone cluster"" and from ""EMR cluster"" to ""AWS EMR cluster"""	DATALAB	Closed	3	3	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13220211	Wrong marking for shared resources	"*Preconditions:*
+
+*Biiling is available*
+
+ 
+
+Steps to reproduce:
+ # Go to billing report page
+
+ 
+
+*Actual result:*
+ # Value for user 'Shared resource' is marked for user's own values
+
+ 
+
+*Expected result:*
+
+1. Value for user 'user@epam.com' is marked for user's own values"	DATALAB	Closed	3	1	2653	AZURE, Back-end, Debian, RedHat, pull-request-available
+13205548	[Azure]: Error handling is absent for wrong username/password	"*Preconditions:*
+
+SSN is created
+
+ 
+
+*Steps to reproduce:*
+
+1. Login DLab with wrong username or password
+
+ 
+
+*Actual result:*
+
+Error handling is absent
+
+ 
+
+*Expected result:*
+
+Error handling is present"	DATALAB	Closed	3	1	2653	AZURE, Back-end, Debian, RedHat
+13251571	[Keycloak]: Project creation is not mapped by LDAP group ( it works only by LDAP user)	"*Preconditions:*
+ # Environment is created  by terraform on K8S
+ # User1 is from grp1 (LDAP)
+ # grp1 is assigned to project1 creation
+ # Project1 is in active status
+
+*Steps to rerpoduce:*
+ # Loggin by user1
+ # Go to list of resource page
+
+Actual result:
+
+'+ Create new' button is disabled
+
+Expected result:
+
+'+ Create new' button is available"	DATALAB	Closed	3	1	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13216015	Modification of exploratory scheduler	"1. Add check box for for notebook scheduler 'Use even some jobs are ran on computational resources':
+1.1. check box is checked off means scheduler for notebook is more prioritative. Scheduler for notebook will be executed (stop) even if jobs are running on related computational resources at that moment  and scheduler by inactivity is set on cluster. 
+1.2. check box is unchecked means if scheduler is set for notebook before stopping it will verify if some jobs are running on computational resource. If jobs are running scheduler for notebook will not stop by inactivity until this jobs are running on clusters.
+"	DATALAB	Closed	3	3	2653	AWS, AZURE, Debian, GCP, RedHat
+13205528	[Java]: Add Swagger tool to DLab	"As a user I want use Swagger in order to call API DLab instae of using DLab UI.
+
+ 
+
+*Acceptance criteria:*
+ # to apply swagger to DLab user uses the next link  <IPssn/api/swagger#/> as example
+
+Official documentation: [https://swagger.io|https://swagger.io/]"	DATALAB	Closed	4	2	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13249606	[Quota]: Add checking of project status before stopping	"If quota is exceeded the resources will be stopped. But a project status is not checked. And if project is stopped it tries to stop the project which is already in 'stopped' status.
+Please, add checking of project status before stopping"	DATALAB	Closed	4	3	2653	AWS, Back-end, Debian, GCP, RedHat
+13245723	Sometimes template list for notebook is empty	"The bug is reprodued not always.
+
+*Preconditions:*
+1. The env is stopped
+
+*Steps to reproduce:*
+1. Start SSN
+2. Start project
+3. Go to resource list
+4. Click '+Create new' button
+5. Select project in 'Select project' drop down list
+6. Select endpoint in Select endpoint drop down list
+
+*Actual result:*
+Select template is disabled
+
+*Expected result:*
+Select template is enabled
+"	DATALAB	Closed	4	1	2653	AWS, Back-end, Debian, RedHat
+13227661	Wrong login error message on DLAB UI	"*Preconditions:*
+
+SSN is created.
+
+*Steps to reproduce:*
+ # Go to Dlab UI
+ # Enter wrong username and password
+
+*Expected result:*
+
+Error message is: “Username or password are not valid”. 
+
+*Actual result:*
+
+Error message is: “There was an error processing you request. It has been logged (ID d61e47ae31e5030)”. "	DATALAB	Open	3	1	2653	Back-end, GCP, pull-request-available
+13210084	API for updating user group	Update API for user group	DATALAB	Closed	3	3	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13205669	Add a local git hook script for checking commit message	"As a DLab contributor I want to use local git hook script in order to restrict commits different than the format proposed
+
+Acceptance criteria:
+
+1. local git hook script is created
+2. instruction is written how to install script
+3. if commits are different than the format proposed a user see appropriate error message and commits are not allowed to do
+4. if commits are the same as the format proposed so user is allowed to commit"	DATALAB	Closed	3	3	2653	AWS, AZURE, Back-end, GCP
+13253280	[Terraform]: Issues connected with quota	"# *+Any instance is not stopped in case of quota exceeding+*
+
+*Preconditions:*
+
+1. Instances are in running status
+
+*Steps to reproduce:*
+ # Set quota (total/project) less than it is used in real
+
+*Actual result:*
+
+Instances are NOT stopped
+
+*Expected result:*
+
+Instances are stopped
+
++*2. If project quota is exceeded it is allowed to create new instance*+
+
+*Preconditions:*
+ # Project quota is exceeded
+
+Steps to reproduce:
+
+1. Create a notebook/cluster
+
+*Actual result:*
+
+Notebook/cluster is created
+
+*Expected result:*
+
+User is not allowed to create notebook/cluster
+
+ "	DATALAB	Closed	3	1	2653	AWS, Back-end, Debian
+13253924	[Keycloak]: Ldap group/users are not mapped to DLab role	"*Preconditions:*
+ # User1 is not allowed to do administrative operation
+
+*Steps to reproduce:*
+ # Login by user1
+ 
+
+*Actual result:*
+ # User1 is allowed to do administrative operation
+
+*Expected result:*
+
+1. User1 is not allowed to do administrative operation
+
+ 
+
+ "	DATALAB	Closed	3	1	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13256468	[Back-end]: Support a multiple endpoints functionality	As a user I want to use more than one endpoints for one project so that one project can has environment on AWS, Azure, GCP.	DATALAB	Closed	3	3	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13205653	[Azure]: Custom parameters are not written in spark-defaults.conf if create custom Spark Standalone (NOT via regonfiguration)	"The bug was found on Azure on Jupyter.
+
+Preconditions:
+1. Notebook is created
+
+Steps to reproduce:
+1. Create custom Spark Standalone:
+[
+{
+""Classification"": ""spark-defaults"",
+""Properties"":
+
+{ ""spark.reducer.maxSizeInFlight"": ""48m"" }
+
+}
+]
+
+*Actual result:*
+Custom Spark Standalone is created as default Spark Standalone
+
+!image-2018-12-20-10-37-08-978.png!
+
+*Expected result:*
+Custom Spark Standalone is created with custom parameters"	DATALAB	Closed	3	1	2653	AZURE, Back-end, Debian, RedHat
+13205518	Persist/Restore reply to self-service from provisioning-service in case self-service is unavailable	Health check should be used to verify availability of self-service	DATALAB	Closed	3	3	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13217205	[Scheduler by inactivity]: Job running for Spark standalone cluster updates last activity for notebook	"*Preconditions:*
+1. Spark Standalone cluster is created on Notebook
+2. Scheduler by inactivity is set for Spark Standalone cluster
+
+*Steps to reproduce:*
+1. run job for Spark Standalone cluster
+2. Time by inactyvity is passed for Spark Standalone cluster
+
+*Actual result:*
+1. Last activity is NOT updated for Spark Standalone cluster
+2. Last activity is updated fot notebook
+
+*Expected result:*
+1. Last activity is updated for Spark Standalone cluster
+2. Last activity is NOT updated fot notebook
+"	DATALAB	Closed	3	1	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat, pull-request-available
+13246281	Url endpoints mapping	As an admin I want to use url of previously endpoint creation during project creation.	DATALAB	Closed	3	3	2653	AWS, Debian, RedHat
+13245000	Project status is not updated after activation	"*Preconditions:*
+1. Project is in 'Not Active' (stopped) status
+
+*Steps to reproduce:*
+1. Activate project
+
+Actual result:
+1. Docker run with '0'
+2. Instance project is running on AWS console
+3. Project is in 'Activating' status on DLab UI
+
+*Expected result:*
+1. Docker run with '0'
+2. Instance project is running on AWS console
+3. Project is in 'Active' status on DLab UI"	DATALAB	Closed	3	1	2653	AWS, Back-end, Debian, RedHat
+13258592	[EQF]: Backup execution runs with 500 error	"*Preconditions:*
+
+1. Environment is created
+
+*Steps to reproduce:*
+ # Go to 'Environment management' page
+ # Click 'Backup' button
+ # Click 'Apply' button
+
+*Actual result:*
+
+1. Backup execution fails
+
+*Expected result:*
+
+1. Backup execution is successful"	DATALAB	Closed	3	1	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13243145	[Back-end]: Notebook name should be unique per user	"Add check for unique notebook name per user.
+If notebook name is not unique add error message: 'This name already exists.'"	DATALAB	Closed	3	3	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13237701	Define API for endpoint	Please define data contract between BE and Cloud Endpoint using Open API 3.0 spec.	DATALAB	Closed	3	3	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13205517	Review documentation concerning DLab deployment on AWS	"As a user I want easily and quickly deploy DLab  by myself on AWS using appropriate documentation:
+ - [https://github.com/epam/DLab/blob/master/README.md#Configuration_files]
+
+ - [https://kb.epam.com/display/EPMCBDCC/Deployment+checklist]
+
+ 
+
+*Acceptance criteria:*
+
+1. All prerequisites should be counted which are needed before DLab deploy"	DATALAB	Closed	3	3	2653	AWS, Back-end
+13266788	Alter error message for starting notebook	"If project (project endpoint) is not active and user tries start notebook, please change error message to the following:
+
+*Oops!*
+
+*Could not exploratory environment <name> start. Connection to <xx.xxx.xxx.xxx:xxxx> failed*"	DATALAB	Closed	4	3	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13257962	[Generate key]: Only format of key.pub should be stored on instances	"*Preconditions:*
+1. SSN is created
+
+*Steps to reproduce:*
+1. Click 'Generate' key
+
+*Actual result:*
+1. user_name.pem is generated per user
+2. user_name.pub is not stored on project
+3. Appears error message: 'Wrong key format. Key should be in openSSH format'
+
+*Expected result:*
+1. user_name.pem is generated per user
+2. user_name.pub is stored on project"	DATALAB	Closed	3	1	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13247849	[Back-end]: Adjust product and endpoint tags	"Project tag should contain only the value of project name.
+Endpoint tag should contain onle the value of endpoint name.
+Project tag and Endpoint tag should be prevented from DLab UI and not convey from BE to DevOps."	DATALAB	Closed	3	3	2653	AWS, Back-end, Debian, GCP, RedHat
+13241457	[Admin]: Investigate why sometimes administration page is denied	"This case is reproduced random.
+Sometimes after project creation.
+Please investigate this case and fix it."	DATALAB	Closed	4	3	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13248535	Prevent 500 error if project is in 'creating' or 'failed' status	"*Steps:*
+1. Project is in status 'creating' or 'failed'
+2. Go to billing report page
+3. open 'console' through F12"	DATALAB	Closed	3	3	2653	AWS, Debian, GCP, RedHat
+13256126	[Keycloak]: Issues connected with quota	"# *+Any instance is not stopped in case of total quota exceeding+*
+
+*Preconditions:*
+
+1. Instances are in running status
+
+*Steps to reproduce:*
+ # Set quota total less than it is used in real
+
+*Actual result:*
+
+Instances are NOT stopped
+
+*Expected result:*
+
+Instances are  stopped
+
+*****************************************************************************************
+
++*2. If project quota is exceeded it is allowed to start notebooks*+ 
+
+*Preconditions:*
+ # Quota is exceeded for Project1
+ # Notebook is in 'stopped' status 
+
+*Steps to reproduce:*
+
+1. Start notebook
+
+*Actual result:*
+
+1. Notebook is starting
+
+*Expected result:*
+ # User is not allowed to start notebook
+ # Error message appears ""Operation can not be finished. Resource quote is reached""
+
+ *************************************************************************************************
+
++*3. If total quota is exceeded it is allowed to create a new project*+
+
+*Preconditions:*
+ # Total quota is exceeded
+
+*Steps to reproduce:*
+
+1. Create a new project
+
+*Actual result:*
+
+1. It is  allowed to create a new project
+
+*Expected result:*
+ # It is NOT allowed to create a new project
+ # Error message appears ""Operation can not be finished. Resource quote is reached""
+
+********************************************************
+
+*+4. Project is not stopped in case of project quota exceeding+*
+
+*Preconditions:*
+
+1. Project1 is in active status
+
+*Steps to reproduce:*
+ # Set quota for project1 less than it is used in real
+
+*Actual result:*
+
+Project1 is NOT stopped
+
+*Expected result:*
+
+Project1 is stopped
+
+ "	DATALAB	Closed	3	1	2653	AWS, Back-end, Debian
+13225235	[Back-end]: Add DLab version on UI	"As a user I want to view what version of DLab I am using.
+
+ 
+
+*Acceptance criteria:*
+ # 'About us' button is added on 'resources list' page
+ # If user clicks 'About us' button a popup appears, on which version of deployed DLab  is pointed"	DATALAB	Closed	3	2	2653	Debian, RedHat
+13215782	[Scheduler on idle]: Prevent scheduler by inactivity execution in case if computational resource are in statuses 'creating', 'terminating', 'configuring'	"*Preconditions:*
+ Computational resource is in status creating/configuring/terminating
+
+*Steps to reproduce:*
+ 1. Execute scheduler by inactivity for notebook
+
+*Actual result:*
+ Computational resource is in failed status on DLab UI
+
+*Expected result:*
+ Prevent scheduler by inactivity execution"	DATALAB	Closed	3	1	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat, pull-request-available
+13247671	Prevent conveying failed project on 'Manage environment' popup	Do not convey failed project on 'Manage environment' popup	DATALAB	Closed	4	3	2653	AWS, Back-end, Debian, GCP, RedHat
+13243016	[Back-end]: Convey shared and shared_project buckets	"As a user I want to see shared and shared_project buckets on DLab UI, so that I can collaborate with other users.
+
+*Acceptance criteria:*
+
+1. Convey to FE the value of shared bucket
+2. Convey to FE the value of shared_project buckets"	DATALAB	Closed	3	3	2653	AWS, Back-end, Debian, GCP, RedHat
+13205549	[R package]: Library installation has failed but status is still 'installing' on DLab UI	"A bug was found on all clouds and notebooks but only for *'R package'* group
+
+ 
+
+*Preconditions:*
+ # Rstudio is created
+ # 'Resources list' page is open
+
+ 
+
+*Steps to reproduce:*
+
+1.  Click action menu for RStudio
+
+2. Choose 'Manage libraries'
+
+3. Choose  notebook in 'Select resource'  drop down list
+
+4. Choose r packages in 'Select group'
+
+5. Enter library name *spduration* in text box for library name
+
+6. Choose entered library in autosearch
+
+7. Click 'Install' button
+
+ 
+
+*Actual result:*
+ # Docker executed with 0, but library is not installed due to some dependencies
+ # Library status is 'installing' on DLab UI
+
+ 
+
+*Expected result:*
+
+1. Library status is failed on DLab UI"	DATALAB	Closed	3	1	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13249884	[Azure]: Project status is not updated	"*Preconditions:*
+SSN is created
+
+Steps to reproduce:
+1. Create a project
+
+*Actual result:*
+1. Project is created
+2. Project status is not changed from 'Creating' to 'Active'
+
+*Expected result:*
+1. Project is created
+2. Project status is changed from 'Creating' to 'Active'
+"	DATALAB	Closed	2	3	2653	AZURE, Debian, RedHat
+13205398	[TechDebt] Generalized communication protocol(error handling) between UI and BE	"As a user I want to see error handling for some action in order to be informed about process.
+
+ 
+
+*Acceptance criteria:*
+
+1. error handling should appear in case of successful/unsuccessful backup
+
+2.  error handling should appear in case of uploading key of wrong content
+
+3.  error handling should appear in case of edge stopping/terminating during if one of the instance is in creating/starting status via  environment management"	DATALAB	Closed	3	4	2653	AWS, AZURE, Debian, GCP, RedHat
+13242447	[Project status]: Convey project status to FE	"Convey project status:
+
+CREATING,
+ACTIVE,
+FAILED,
+DELETED,
+DELETING,
+DEACTIVATING,
+ACTIVATING,
+NOT_ACTIVE"	DATALAB	Closed	3	3	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13234261	[Back-end]: Ability to terminate a project for admin user	"As an Admin I want to terminate project(s), so that I can rid of unnecessary resources.
+
+ 
+
+*Preconditions:*
+ # Admin is logged-in DLab
+ # Admin is located in ‘Project’  tab on ‘Administration’ page
+ # ‘Manage project’ popup is open
+
+ 
+
+*Description:*
+
+If Admin clicks termination icon in action column confirmation dialog appears ‘Project name’ will be decommissioned. Do you want to proceed?
+
+If Admin clicks ‘Yes’ a project is terminated, confirmation dialog is closed.
+
+If Admin clicks ‘No’ a project is not terminated, confirmation dialog is closed.
+
+
+
+
+
+*Acceptance criteria:*
+ # Admin is able to terminate a project 
+ # Terminated project is absent among the other project
+ # All resources are killed except for VPC (or check if any other project exists in same VPC, if not - delete VPC) and bucket."	DATALAB	Closed	3	2	2653	AWS, Debian, GCP, RedHat
+13205562	[Manage roles]: Add API for deleting user group from role	DELETE /group/ID	DATALAB	Closed	3	3	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13248375	Convey list of installed libraries to UI in case of notebook creatoion from custom AMI	"*Steps:*
+1. Create notebok1
+2. Install libs on notebook1
+3. Create custom AMI from notebook1
+4. Create notebook2 from custom AMI
+5. Go to library management of notebook2
+
+If notebook is created from custom AMI previous installed libs are not visible on DLab UI, although libs are installed on notebook."	DATALAB	Closed	3	3	2653	AWS, Back-end, Debian, GCP, RedHat
+13205475	Remove 'add compute' button for user who is not allowed to create computational resources	"*Preconditions:*
+ # environment is created
+ # user is not allowed to create computetional resources
+ # notebook is created
+
+ 
+
+*Steps to reproduce:*
+ # Go to 'resources list' page
+ # Click action menu for notebook
+ # Choose 'add compute'
+
+ 
+
+*Actual result:*
+
+Appears popup and it is impossible to close it
+
+ 
+
+*Expected result:*
+
+'Add compute' button is absent
+
+ "	DATALAB	Closed	3	1	2653	AWS, AZURE, Debian, GCP, RedHat
+13248552	Convey billingProjectQuotaUsed instead of billingUserQuoteUsed	"BE does not convey information about used quota per project to FE, so there are absent information:
+*1.* when project quota is close to limit (equal and less 30%)
+*2.* when project quota is above the limit
+
+*Tasks:*
+*1.* convey this information to FE
+*2.* replace user quota by project quota"	DATALAB	Closed	3	3	2653	AWS, Debian, RedHat
+13210085	Possibility to execute SS schedulers in cluster mode	MERGED INTO DEV, but not yet tested because currently we have just 1 ssn node	DATALAB	Closed	3	3	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13245735	'$anyuser' group does not trigger for project	"*Preconditions:*
+1. '$anyuser' group  is assigned to a project1
+2. Project1 is created
+3. Project1 is in 'Active' status
+
+*Steps to reproduce:*
+1. Go to 'resources_list' page
+
+*Actual result:*
+1. '+ Create new' button is disabled
+2. User is not allowed to create notebook
+
+*Expected result:*
+1. '+ Create new' button is unabled
+2. User can create notebook
+"	DATALAB	Closed	3	1	2653	AWS, Back-end, Debian, GCP, RedHat
+13205487	User is not Admin by default after creating SSN	"A bug was found on AWS.
+
+*Preconditions:*
+Edge is create
+
+*Steps to reproduce:*
+1. Go to ""Environment health status"" page
+
+*Actual result:*
+1. Buttons (""Manage roles"", ""SSN"", ""Backup"", ""Manage environment"") for executing administration actions are absent
+2. ""Environment management"" page is absent in main menu
+
+*Expected eresult:*
+1. Buttons (""Manage roles"", ""SSN"", ""Backup"", ""Manage environment"") for executing administration actions are present
+2. ""Environment management"" page is present in main menu"	DATALAB	Closed	2	1	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13225236	Back-end	Convey the link for release note as well.	DATALAB	Closed	3	7	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat, pull-request-available
+13218897	Docker check in activity should be terminated after execution	"docker run -i replace by docker run --rm -i
+
+ Inactivity integration branch"	DATALAB	Closed	3	3	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13246567	Add possibility to set quota more than for one project	As an Admin I want to set quota for several project (not only for one) so that I can control finance budget more than for one project.	DATALAB	Closed	3	3	2653	AWS
+13205634	[Azure][AWS]: Integration test fails to execute goal org.apache.maven.plugins:maven	"*Steps to reproduce:*
+
+1. Run autotest for Azure
+
+ 
+
+*Actual result:*
+
+Autotest fails with error:
+*Execution default-test of goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test failed*
+[http://35.166.222.81/job/AutoTests_Azure/196/console]
+
+[http://35.166.222.81/job/AutoTests_AWS/265/console]
+
+ 
+
+*Expected result:*
+
+1. Autotest runs successfully
+
+ "	DATALAB	Closed	3	1	2653	AZURE, Back-end, Debian, RedHat
+13248565	Forbid instance starting/creation if PROJECT quota is exceeded and project creation if TOTAL quota is exceeded 	"User should not be allowed to create and start instances if PROJECT quota is exceeded.
+Admin should not be allowed to create new project if TOTAL quota is exceeded."	DATALAB	Closed	3	3	2653	AWS, Back-end, Debian, RedHat
+13238544	[Project tag]: Once Project is created - pass project tag to DevOps	"Once Project is created - pass project tag to DevOps.
+
+ 
+
+*Project_tag:*
+
+o    manual input from Web UI
+
+o    assigned to notebooks, clusters, including Service data engines
+
+project tag can not be changed once project got created
+
+ 
+
+Instances are created per project. Add project_tag to all instances which are created in this project.
+
+So that once project is created - tag all project infrastructure with project tag.
+
+ 
+
+Example:
+
+Admin created Project1 with *project_tag:Project1* and assign Endpoint1 to that project
+ - All resources within Endpoint (notebook, cluster) obtain additional tag *project_tag:Project1.***
+
+Admin created Project 2 with *project_tag:Project2* and assign Endpoint1 to that project
+ - All resources within Endpoint (notebook, cluster) obtain additional tag *project_tag:Project2.*
+
+ "	DATALAB	Closed	3	3	2653	AWS, Debian, RedHat
+13245726	User is not allowed to create any notebook if administration operations are turned off	"*Preconditions:*
+1. user1 i assigned to a project
+2. user1 is not supposed to execute administration operations
+3. user1 is located on 'resources_list' page
+
+*Steps to reproduce:*
+1. Click '+ Create new' button
+
+*Actual result:*
+User1 is logged out
+User1 is NOT able to create notebook
+
+*Expected result:*
+User1 is logged in DLab
+User1 is able to create notebook"	DATALAB	Closed	3	1	2653	AWS, Back-end, Debian, GCP, RedHat
+13247284	Notebook and spark cluster statuses are not updated after  spark parameter reconfiguration	"*Preconditions:*
+1. Spark cluster is in running status
+
+*Steps to reproduce:*
+1. Reconfigure spark parameter for notebook or spark cluster
+
+*Actual result:*
+1. Docker is executed
+2. Notebook or spark cluster status is still in 'Reconfiguring' status
+
+*Expected result:*
+1. Docker is executed
+2. Notebook or spark cluster status is updated (failed or running)
+
+In this case docker runs with '1', so instance status should be 'failed' on DLab UI."	DATALAB	Closed	3	1	2653	AWS, Back-end, Debian, GCP, RedHat
+13221427	[Azure]: Billing is not loaded for Notebook and Data Engine	"*Preconditions:*
+
+1. Billing is available
+
+ 
+
+*Steps to reproduce:*
+ # Go to billing report page or billing detail
+
+ 
+
+*Aactual result:*
+
+1. Billing is not loaded for Notebook and Data Engine
+
+!Billing.PNG!
+
+ 
+
+*Expected result:*
+
+1. Billing is loaded for Notebook and Data Engine
+
+ "	DATALAB	Closed	3	1	2653	AZURE, Back-end, Debian, RedHat, pull-request-available
+13205543	Rename columns Swap Page In/Out in SSN Monitor	"# 'Swap Page In' should be renamed into 'Pages Paged In' on ;SSN Monitor' ('Memory' tab)
+ # 'Swap Page Out' should be renamed into 'Pages Paged Out' on ;SSN Monitor' ('Memory' tab)
+[https://unix.stackexchange.com/questions/284315/how-to-obtain-counters-for-swap-in-swap-out-on-linux]
+ # Remove row ' Page Size' from 'Memory' grid, because its value does not match the value of page size (getconf PAGESIZE) or define what value is portrayed in ' Page Size' and rename it accordingly"	DATALAB	Closed	4	3	2653	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13213686	Implement possibility to interrupt library installation on instance from DLab UI	"As a user I want to interrupt library installation so that I can install the other library in case of hanging of previous library installation.
+
+Acceptance criteria:
+1. There is ""Cancel"" button near ""Install"" one.
+2. If user hit ""Cancel"" button the installation will be interrupted and the next library installation will be enabled."	DATALAB	Closed	3	4	2653	AWS, AZURE, Debian, GCP, RedHat
+13205348	[Scheduler on timer]: Add a reminder after user logs in notifying that corresponding resources are about to be stopped/terminated	"As a user I want to see reminder in 15 minutes before a scheduler begins to stop machine(s) so that I will be informed about my current schedule and can change schedule if I need to work with instance.
+
+ 
+
+*Acceptance criteria:*
+ # Reminder should appear in 15 minutes before a scheduler begins to stop machine(s).
+
+ 
+
+_*** Please, investigate if reminder should be by email or appears on user browser (in this case we need autorefresh on UI side)_"	DATALAB	Closed	3	2	2653	AWS, AZURE, Debian, GCP, RedHat
+13300520	[Front-end]: Support library installation of particular version from DLab UI 	"As user I want to install particular version of library, so that I can easily upgrade or downgrade the library by demand.
+ +How it works now:+
+ # If library is already installed on instance (this library was previous installed during notebook creation) and user installs the same library via DLab UI. And as result DLab shows installing -> installed, but in fact this library is not installed by DLab, Dlab finds that such library is previously installed and changes status installing -> installed. This case is actual when user want to install upper version of library. So make possible to install library like <library_name==version> via DLab UI. For example, this bug was found with library 'request'.
+ # Also if update Python 3 via terminal it shows that it is upgraded but in some minutes it is downgraded again. (It was on Jupyter)
+----
+*How should it work:*
+
+ - If user types wrong library version the output appears where there is a list of versions for this library
+ - If user types right library version this library version should be installed
+ - On top of that what dependencies are added during installation should be conveyed to user (?) {color:#de350b}I{color}{color:#de350b}n{color} what way it should be conveyed?
+ - The latest installed library should be in the top of the libraries grid.
+
+----
+*Issues:*
+ - Do not allow to choose library for cluster installation if available lib list is not gained for cluster.
+
+ 
+----
+*Update1:*
+
+1. Template for r package installation <name_lib>, version=<x.x.x>
+
+2. Template for apt/yum installation <package name>=<x.x.x>
+
+3. Template for python installation <name_lib>==<x.x.x>
+
+4. If users types only lib_name with == or = show information about available versions
+
+5. If users types only lib_name without == or = then it is installed the latest version
+
+ 
+
+ 
+
+ "	DATALAB	Closed	3	4	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13271447	Enhancement for 'List of resource'/'Project' pages	"# Get rid of 'To start working, please, create new environment' if all resources are terminated in 'Show active' mode. It is visible during switching between the modes
+ # If terminate project on confirmation dialog edge_node values should have left alignment
+ # Icons for computational resources should be aligned
+ # Get rid of data labels delay on:
+
+ - Environment Management page-> Manage environment popup -> stop/terminate a project
+ - roles page -> delete roles
+ - resources_list page -> stop/terminate computational resource
+ - Environment Management page -> stop/terminate computational resource"	DATALAB	Closed	5	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13266868	Add hint for instance link	Please, add hint for link of notebook/computational resource.	DATALAB	Closed	5	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13352259	[Project page]: Header should be sticky during scroll down	"1. [Project page]: Header should be sticky during scroll down
+
+2. [Environment Management]: In the last row add horizontal line."	DATALAB	Closed	4	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13284576	[Front-end]: Add possibility to recreate edge node after edge termination/failing	"As user I want to use my instances in case if edge failing or again to create previously terminated edge in the same project using the same endpoint so that it allows me do not create project with new name and use the previous name.
+----
+If we terminate edge (or edge has been failed) we could not create the new edge in the same project and the same endpoint.
+
+ 
+
+Github issue: [https://github.com/apache/incubator-dlab/issues/731.|https://github.com/apache/incubator-dlab/issues/731]"	DATALAB	Closed	3	3	3680	AWS, AZURE, Debian, Front-end, GCP, Github_issue, RedHat, pull-request-available
+13325701	Allow to stop notebook if at least one instance is in running status during multiple choice	On 'Environment management' page allow to stop notebook if at least one instance is in running status during multiple choice.	DATALAB	Closed	4	4	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13254159	[Quota]: Prevent putting some values and align error message	"1.  Error message overlaps on text box
+
+2. Prevent putting non-integer value or add error message:
+
+'Budget can contain only integer value'. What non-integer values are allowed depends on kind of browser (see attachment)"	DATALAB	Closed	4	3	3680	2.3_old, AWS, AZURE, Debian, Front-end, RedHat, pull-request-available
+13353262	[Front-end][GCP]: Add possibility of Jupyter creation with GPU	"'Add GPU' checkbox should be in 'Create analytical tool' popup only for Jupyter on GCP.
+
+Add new parameters for Jupyter:
+ * GPU type - dropdown list
+ * GPU сount - text box Should be special connection between input - ask [~mykolabodnar]
+
+Show which GPU parameters have been used for Jupyter creation:
+ - GPU tag in Tags  column [List of resources]
+ - count/type in Size column [List of resources]"	DATALAB	Closed	3	3	3680	Debian, Front-end, GCP, pull-request-available
+13348914	Improvements for Configuration page	"# In report change the order for sub-menu. 'Adit' should be the first and then 'Billing'. (/)
+ # Configuration: If any points are not selected the 'Restart' button should not be active. And vice versa if at least one point is selected the 'Restart' button should be active. (/)
+ # The 'Save' and 'Discard' buttons are not used for 'Main' tab. So,  ged rid of the 'Save' and 'Discard' buttons  on 'Main' tab. (/)
+ #  Only true admin can manage the configuration page. So do not show configuration page for project admin. (/)"	DATALAB	Closed	3	4	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13315952	Investigate how we can show following link in Audit in some cases	"Following link is not shown in audit if user refers link via:
+
+- Open link in new tab
+
+- Open link in new window
+
+- Open link in incognito window
+
+Investigate if it can be fixed.  If yes, then fix it.
+
+ "	DATALAB	Closed	4	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13348112	Set of UI changes for all pages	"# [List of resources]: Some values overlap is scroll down (/)
+ # [Menu]: Change the gear for administration page (/)
+ # [Roles][Projects]: align arrows with text (/)
+ # Sort sub-menu items{color:#de350b} (/){color}"	DATALAB	Closed	3	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13298757	Prevent 'Cloud Endpoint API' and Apache Zeppelin Ungit link from DLab UI side	"Comment 'Cloud Endpoint API' and Apache Zeppelin Ungit link.
+
+So user should not see these information in release 2.3.
+
+Do it when branch for release 2.3 will be ready."	DATALAB	Verified	4	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13353054	Get rid of extra confirmation dialog if edge node does not have any related resources	If edge node does not have any related resources in the project during termination do not show the second confirmation dialog.	DATALAB	Closed	4	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13302022	[Front-end]: Set of issues for bucket browser	"# (/) Allow bucket operation if bucket is empty - {color:#00875a}*Verified*{color}
+ # (/)  (06/05/20)(BA)If delete the last file in folder the folder deletes (if folder has been created via DLab bucket browser) and the(/) folder appears as a file (if folder has been created from Cloud console) - {color:#00875a}*Verified*{color}
+ # (/)  (06/05/20) (BA)Allow to create empty folder (after creation the folder disappears if nothing is added to the folder). - {color:#00875a}*Verified*{color}
+ # (/) Make 'Save' button and add 'Cancel' button and made the option mandatory - {color:#00875a}*Verified*{color}
+ # (/) Do not allow to create folder using not English letter and with the same name, (special characters: <->, <_>, <.> should be allowed - add error message) ? From *GCP* console it is forbidden </>, <"">, <\>. For *AWS* console it is forbidden </>. For *Azure* console it is forbidden <#>, <?>, </>, <\>. So from DLab UI side do not allow to create using not English letter -*{color:#00875a}verified{color}* - {color:#de350b}it is not allowed to create with{color} <(>, <)>, <,>, <.>, <]>. For it we have another ticket 1773
+ # (BA)Allow to manage objects if file or folder contain space -{color:#00875a}*Verified*{color}
+ # (/) Do not highlight object if over mouse the file in case if download and deletion are forbidden - {color:#00875a}*Verified*{color}
+ # (/)  Cut object name if name is too long -{color:#00875a} *Verified*{color}
+ # (/) If check off object and than click another folder the 'Download'/'Delete' buttons should be disabled - {color:#00875a}*Verified*{color}
+ # (/) After clicking upload  the button 'Upload' should be disabled - {color:#00875a}*Verified* {color}
+ # (/) 'x' icon should be red if over the mouse during upload - {color:#00875a}*Verified*{color}
+ # (/) Add header: Name/Size/Last modified - {color:#00875a}*Verified*{color}
+ # (/) Do not convey to user size and date/time for folder, instead of it portray <-> symbol - {color:#00875a}*Verified*{color}
+ # (/) In the left section make smaller distance (by vertical) between folders - {color:#00875a}*Verified*{color}
+ # (/) Get rid of the hint 'No file chosen' during uploading - {color:#00875a}*Verified*{color}
+
+ 
+  
+  "	DATALAB	Closed	3	1	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13282155	Project status is not auto-updated	" 
+----
+*Preconditions:*
+
+1. At least one project is created <Project1>
+
+*Steps to reproduce:*
+
+1. Create <Project2>
+
+*Actual result:*
+
+1. 'Project2' does not appear in grid until hitting 'Refresh' button
+
+*Expected result:*
+
+1.  'Project2'  appears in grid automatically
+----
+2. Project status does not auto-change if stop/start/terminate project
+-----
+
+
+3. Previously checked off edge should be cleared after closing popup 'Stop edge node'/'Terminate edge node'"	DATALAB	Closed	4	1	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13279835	Role sort auto-triggered after group updating	"*Preconditions:*
+
+1. At least three groups are created
+
+*Steps to reproduce:*
+ # Click 'Roles' drop down list of any group
+ # Uncheck the topper item in 'Roles' drop down list
+ # Confirm changes
+
+*Actual result:*
+
+Editable group changes its position
+
+*Expected result:*
+
+ Editable group does not changes its position"	DATALAB	Closed	5	1	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13280534	UI issues on 'Manage library' page	"*Preconditions:*
+
+1. Notebook is in running status
+
+*Steps to reproduce:*
+
+1. Go to 'manage library' page
+
+*Actual result:*
+ # (/) Notebook name is in #718ba6 color
+ # (/) Header grid is broken
+ # (/) Action filter is in oval if over the mouse
+ # Installation status is not auto-updated
+
+*Expected result:*
+
+ 1. Notebook name is in #455c74 color
+
+2. Header grid is not broken
+
+3. Action filter is in circle if over the mouse
+
+4. Installation status is  auto-updated"	DATALAB	Closed	4	1	3680	AWS, AZURE, Debian, GCP, RedHat, pull-request-available
+13286691	Alter information message if remove group from the project	"Removing a group from project causes that user (from this group) is not able to see his instances in this projects, so convey information message to admin:
+
+'Removing the group  <group_name> from the project may prevent the users from this group to access his/her resources'"	DATALAB	Closed	3	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13300740	[Front-end]: Implement audit by DLab level	"As user I want to see history changes, so that I can easily find out what/when/who has made changes.
+
+Possibility to find out:
+ * Who has deleted or added user?
+ * Who has created notebook/compute? 
+ * Who has stopped/started/terminated notebook/compute/project?
+ * Who has edited group/project/notebook/compute?
+ * Who has gone to links?
+ * When changes have been made
+ * What changes have been made?
+
+In general everything that has been done via DLab UI should be in history of changes.
+
+History by changes should be in the following consistency:
+
+user → time→ action.
+
+This functionality should be conveyed to a new tab 'Audit'.
+
+{color:#de350b}Add bell/information icon, where user can view history changes in 'list of resource' page.{color}"	DATALAB	Closed	3	2	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13342133	Disable gear icon if Notebook is in failed status	If Notebook is in Failed status the gear icon should be disabled.	DATALAB	Closed	4	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13264260	Filter actions should be in one row in 'environment_management' page	"Chrome Version 77.0.3865.90
+
+Firefox 69.0.2 (64-біт)
+
+It is reproduced even if zoom is 100%
+
+ "	DATALAB	Closed	4	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13295769	[Branch-1571][Front-end]: List of resources page is broken only for user	"*Preconditions:*
+ # Notebook is created by 'user1'
+ # 'User1' has only user permissions
+ # Notebook is created by user1
+
+*Steps to reproduce:*
+ # Go to 'List of resource' by user1
+ # Stop notebook by user1
+
+*Actual result:*
+
+1. List of resources page is broken
+
+*Expected result:*
+
+1. List of resources page is not broken
+
+ "	DATALAB	Closed	2	1	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13321074	[Front-end]: Convey 'invalid name' status if it is tryout to install lib with wrong name	If user installs library  with wrong name - convey invalid name in status column.	DATALAB	Closed	3	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13267645	[Endpoint list]: Endpoint header values should not change their position	If endpoint url is a little longer the values of endpoint header should not change their position. 	DATALAB	Closed	4	3	3680	AWS, AZURE, Debian, GCP, RedHat
+13341601	Gear icon is disabled if Notebook contains Data Engine	"*Preconditions:*
+ # Data Engine is created for Notebook1
+ # Notebook1 is in running or stopped status
+
+*Steps to reproduce:*
+ # Go to 'Environment management page'
+
+*Actual result:*
+
+1. Gear icon is disabled for Notebook1
+
+*Expected result:*
+
+1. Gear icon is enabled for Notebook1"	DATALAB	Closed	4	1	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13284574	[List of resource]: Notebook is not convey to DLab UI in Microsoft Edge browser	"*Preconditions:*
+
+1. Notebook is created by user1
+
+Steps to reproduce:
+
+1. Login by user1 in Microsoft Edge browser
+
+*Actual result:*
+
+1. Notebook1 is not in List of resource page
+
+*Expected result:*
+
+1. Notebook1 is in List of resource page"	DATALAB	Closed	3	1	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13282427	[Environment management]: Cluster issues during notebook stopping/termination	"# (/) Convey cluster size during notebook stopping/terminating on pop up
+ # (/) Remove grid header during stopping/termination notebook if DE is terminated/failed
+ # (/) Convey DES which will be terminated during notebook stopping/termination."	DATALAB	Closed	4	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13304283	It is impossible to do any action via bucket browser if bucket is not empty	"The bug  is reproduced if there is only one object in a bucket.
+
+*Preconditions:*
+
+1. Upload a file via cloud console
+
+*Steps to reproduce:*
+
+1. Open bucket browser
+
+*Actual result:*
+
+1. Bucket browser is not opened
+
+*Expected result:*
+
+1. Bucket browser is opened
+----
+*Connected issues:*
+ 2. If upload via bucket browser any action is not triggered after button clicking
+3. Hint is not portray in upload grid"	DATALAB	Closed	2	1	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13333933	[Front-end]: Minor issues connected with localization	"*1.*
+
+*Preconditions:*
+ 1. Billing is available on DataLab Web UI
+
+*Steps to reproduce:*
+ 1. Go to 'List of Resources' page
+
+*Actual result:*
+ 1. Billing on the 'List of Resources' page is not localized
+
+*Expected result:*
+ 1. Billing on the 'List of Resources' page is localized
+----
+*2.* Convert date period according to selected language for 'Billing report' page
+----
+*3. (-)* Convey language key to back-end for billing export (will do it in branch with back-end fix) - it will be done in task 2089."	DATALAB	Closed	4	1	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13289237	[Front-end]: Cluster name should be unique per project	"Work in branch ""DLAB-1546"""	DATALAB	Closed	3	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13293489	Limit custom image name	"1. Custom image name should be no longer than 10 symbols.
+
+2. The following error message should appear:
+
+'Name cannot be longer than 10 characters and can only contain letters, numbers, hyphens and '_' but can not end with special characters'
+
+ 
+
+ "	DATALAB	Closed	4	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13323910	[TensorFlow with Jupyter]: Get rid of r package for Spark Standalone cluster	"'TensorFlow with Jupyter' do not support r package. And this r package is absent.
+
+However on related Spark Standalone cluster r package is present, but should be absent.
+
+So, Get rid of r package for Spark Standalone cluster on template 'TensorFlow with Jupyter'."	DATALAB	Closed	4	3	3680	pull-request-available
+13316875	[Front-end]: Changes for lib management after update	"1. If lib version is not found during lib installation show 'invalid version' status in Web UI in red color - (/)
+
+2. Show information in Web UI if user chooses 'Other' group: (/)
+
+'Other group contains Python2 and Python3 libraries.'
+
+ "	DATALAB	Closed	3	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13282202	Administrative page appear for user who has not permission	"*Preconditions:*
+ # User1 is not allowed to do administrative operations
+ # User1 one is located on 'Resource list' page
+
+*Steps to reproduce:*
+ # Go to SSN via ssh
+ # Run a command 'sudo supervisorctl restart all'
+ # Open web where user1 is logged in DLab
+ # Click 'Refresh' button
+
+*Actual result:*
+
+1. Administrative page appears
+
+*Expected result:*
+
+1. Administrative page does not appear"	DATALAB	Closed	4	1	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13309194	[Library management]: Filtered data are changes in some seconds 	"*Preconditions:*
+
+1.  Any library is installed on notebook
+
+2. Any library is installed on computational resource
+
+3. Library management popup is opened
+
+*Steps to reproduce:*
+
+1.  Filter by destination or resource type or status
+
+*Actual result:*
+
+1. Filtered data are changes in some seconds
+
+*Expected result:*
+
+1. Filtered data are changes in some seconds
+
+ "	DATALAB	Closed	4	1	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13313591	It is impossible to delete empty folder via bucket browser	"*Preconditions:*
+ # Bucket browser popup is opened
+ # Any empty folder is created
+
+*Steps to reproduce:*
+
+1. Delete empty folder
+
+*Actual resul:*
+
+1. Appears error message: 'objects field cannot be empty' 
+
+*Expected result:*
+
+1. Error message does not appear"	DATALAB	Closed	4	1	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13298294	[Front-end]: User should be notify if project quota is exceeded	"Dear *<User_name>*,
+Project cloud infrastructure usage quota has been exceeded. All your analytical environment will be stopped. To proceed working with environment, request increase application quota from DLab administrator.
+
+ 
+
+Inform user during his login in case if project quota is exceeded.
+
+Inform only user who is assigned to the project."	DATALAB	Closed	4	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13299107	Filter by options 'all'/'none' do not trigger in 'Billing report' page	"*Preconditions:*
+
+1. Billing is available
+
+*Steps to reproduce:*
+ # Go to billing report page
+ # Filter by 'all' or 'none'
+
+*Actual result:*
+
+1. Filter does not trigger
+
+*Expected result:*
+
+1.Filter  triggers
+
+ "	DATALAB	Open	4	1	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13335608	[GCP][Azure]:Total instance number is absent or incorrect for Compute	"*Preconditions:*
+
+1. Notebook is created on Azure/GCP
+
+*Steps to reproduce:*
+ # Create spark standalone cluster
+ # Click on compute popup
+
+*Actual result:*
+ # Total instance number value is absent for Azure
+ # Total instance number value is less than actual for GCP
+
+*Expected result:*
+ # Total instance number value is present for Azure
+ # Total instance number value is correct for GCP"	DATALAB	Closed	4	1	3680	AZURE, Debian, GCP, RedHat, pull-request-available
+13273871	[Libraries management][Part1]: Issues with libraries filter	"# (/) Filter auto-clears after 3 seconds
+ # (/) Change 'Select resourceType' -> 'Select resource type'
+ # (/) Accept and clear icons should change color if hover the mo_emphasized text_use. Accept -> green, clear -> read
+ # (/)'Close', 'Install' buttons are hidden if there are too many libraries in grid  
+ # (/) In 'Group' drop down list value should be:  Apt/Yum, Python 2, Python 3, Java, R packages, Others
+ # (/) Drop down values should not have blue color. The style should be the similar as it is  on the other pages DLab
+ # (/) 'No data available' should have center alignment in 'Billing Report'/'List of Resources' pages. However after visiting library management modal window it changes from  center to left alignment
+ (/) It should filter by version not only by name in name text box
+ # (/) Remove extra information message 'Cannot retry to reinstall failed libraries: Exploratory Jup1 is not running' if notebook is in 'stopped'/'starting'/'Creating Image'/'stopping'/'terminating'/'terminated'/'reconfiguring' statuses
+ # (/) If there is no any value in grid the style of drop dawn values should be as it is in 'billing report' page (see attachment)"	DATALAB	Open	3	1	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13357507	[Bucket browser]: Any action is blocked during a file download only for Safari browser	"*Preconditions:*
+ # Bucket browser popup is open via Safari browser
+
+*Steps to reproduce:*
+ # Upload any file more than 1 GB
+ # Click close popup
+
+*Actual result:*
+ # Popup is closed
+
+*Expected result:*
+ # Popup is not closed
+ # Any action is blocked
+
+ "	DATALAB	Closed	4	1	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13281698	Set of tasks connected with with cloud specific and statuses	"1. (/) Resource list page: remove header during Notebook stopping if Data Engine is terminated
+
+2. (/) Project page: do not convey failed edge node during project termination
+
+3. (/) Project page: if hove the mouse endpoint name arrow-cursor should not appear
+
+4 .(/) Change hint 'Select endpoint' -> 'Select template' in 'Select template' drop down list
+
+5. (/) Cloud provider is not defined, so it is impossible to create cluster on external endpoint
+
+6. (/) Remove 'Create AMI' action for GCP"	DATALAB	Closed	4	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedH, pull-request-available
+13268518	Extra scrollbar during login in Chrome browser	"*Preconditions:*
+
+1.  Environment is created
+
+*Steps to reproduce:*
+
+1. Go to link from Jenkins job to login
+
+*Actual result:*
+
+There is vertical scrollbar on the right side
+
+*Expected result:*
+
+There is not vertical scrollbar on the right side"	DATALAB	Closed	5	1	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13312201	[Part3]: Set of tasks for 'Environment management' page	"# Ged rid of common check box if check box item is absent (view attachment)- (/)
+ # 'Reconfiguring' should not overlap stop icon in 'Environment management' page (view attachment) - (/)"	DATALAB	Closed	4	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13295751	[Branch-1571][Billing report page]: Header is broken on during extending	"This bug is reproduced on MacBook Pro (13-inch)
+
+*Preconditions:*
+
+1. User is located on Billing report page
+
+*Steps to reproduce:*
+
+1. Extend header
+
+*Actual result:*
+
+1. Header is broken
+
+*Expected result:*
+
+1. Header is not broken"	DATALAB	Closed	4	1	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13298011	[Scheduler]: Time circle should not be cut	Blue time circle is cut, but should not be.	DATALAB	Closed	5	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13274782	[Notebook name popup]: Cancel' button does not trigger for Cluster configurations	"*Preconditions:*
+
+1. Notebook is in 'running' status
+
+*Steps to reproduce:*
+ # Go to 'resource list' page
+ # Click Notebook name
+ # Check off 'Cluster configurations' check box
+ # Click 'Cancel' button
+
+*Actual result:*
+
+1. Notebook name popup is not closed
+
+*Expected result:*
+
+1. Notebook name popup is closed
+
+ "	DATALAB	Closed	4	1	3680	AWS, Azure, Debian, Front-end, GCP, RedHat
+13356214	Get rid of bottom hint for for Safari browser	"Safari Version 14.0.2 (15610.3.7.1.10, 15610)
+
+Ged rid of bottom hint for Safari browser:
+ * Bucket Browser
+ * Roles
+ * List of Resources
+ * Projects
+ * Audit [after cutting and adding hint for to long name in description (bucket browsers/roles/group) ticket DATALAB-2274]
+
+----
+(i) Verified 04/02/2021
+
+The bottom hint still shows up for tag. Thus it's fixed only for Bucket Browser."	DATALAB	Closed	4	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13321973	Update images to user guide	"Updated images: 
+ # Create a project (+)
+ # List of Resources(empty) (+)
+ # List of Resources(notebook creating) (+)
+ # List of Resources(one notebook running) (+)
+ # Notebook info (+)
+ # library all images (+)
+ # Connected Data Engine Service becomes Terminated while connected (if any) Data Engine (Standalone Apache Spark cluster) becomes Stopped. (+)
+ # List of Resources(notebook terminating) (+)
+ # List of Resources(notebook terminated) (+)
+ # List of Resources(compute creating) (+)
+ # Selecting roles (+)
+ # Environment management (+)
+ # Manage quotas (+)
+ # Project quota exceed message (+)
+ # Billing (+)
+ # UI filters (+)
+
+ 
+
+Added images: 
+
+     1. Bucket browser (+)
+
+     2. Audit (+)
+
+ "	DATALAB	Closed	4	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13285719	[Front-end]: Bucket browser	"As a user I want to  use S3 browser so that I can manage my buckets and objects via DLab UI.
+
+ 
+
+*Acceptance criteria:*
+
+*1.* User has access endpoint_shared bucket and project bucket (only if he is assigned to this project)
+
+*2.* Another user does not have access to project bucket (if he is not assigned to this project)
+
+*4.* User can upload and download files to and from bucket
+
+*5*. User can create folder(
+
+*6*. User can see bucket structure (tree)
+
+*7.* Bucket management functionality is on notebook name popup.
+
+ "	DATALAB	Closed	3	2	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13279038	Drop down list structure should disappear simultaneously with other items	Drop down list structure disappear with delay (see attachment).	DATALAB	Closed	5	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13315872	[Part2]: Set of UI tasks in Audit	"(/) 1.  Comma and full stop should not be bold (/)
+
+(/) 2. Endpoint name and project name should be bold (/)
+
+(/) 3.  Change info from 'Stop/terminate/start/reconfigure/create computational resource <cluster_name>, requested for notebook <notebook_name> to 'Stop/terminate/start/reconfigure/create compute <cluster_name>, requested for notebook <notebook_name> (x) (/) 
+
+(/) 4. Spark cluster. Change info: Follow_link computational resource <compute_name>, requested for notebook link. -> Follow compute <compute_name> Master link, requested for notebook <notebook_name>. (/) {color:#de350b}But you should get away double spaces see point 14  (/)  {color}
+
+(/) 5. Data engine Service. Change info: Follow_link computational resource <compute_name>, requested for notebook link. -> Follow compute <compute_name> Hadoop link, requested for notebook <notebook_name>.
+
+(/) 6. Update quota: Rename Update budget -> Update quota (/)
+
+(/) 7. Update quota: Show information about period. Add row 'Period' and values 'Total'/'Monthly' (i) it is waiting for back-end side
+
+(/) 8. Update quote. Move the second column 'Previous value' to the left side in information popup (/)
+
+(/) 9. Web terminal. Change message Open terminal on notebook <notebook_name>. -> Open terminal, requested for notebook <notebook_name>. (x)(/)  remove extra information '2' (/)
+
+(/) 10. Web terminal. Notebook name should be bold (/)
+
+(/) 11. Should be consistency in font style for all information (/)
+
+(/) 12. Action should not be in the past. Change for group update: Removed role(s) -> Remove role(s) and Added role(s) -> Add role(s), and Added user(s) -> Add user(s), and Removed user(s) -> Remove user(s) (x) Now actions are not in the past tense, but the grid is broken when update group or delete objects via bucket browsers (/)
+
+13. Decrease the size for upload/delete/download objects. Add hint for object name. Add three points in the beginning of  object path(/)
+
+(/) 14. Get rid of double spaces Data engine and Data engine service of following link (/)
+  
+  
+  "	DATALAB	Closed	4	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13338416	Role values change their position during update	"*Preconditions:*
+ # Several groups are created
+ # User is located on 'Roles' page
+
+*Steps to reproduce:*
+ # Add new user to existing group
+ # Confirm change
+
+*Actual result:*
+
+1. Role values change their position
+
+*Expected result:*
+
+1. Role values does not change their position
+
+ "	DATALAB	Closed	4	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13327377	[Detailed billing]: Enhancement in column width	"There are different space between columns. 
+
+Allocate column width according to value of max symbols and make space between columns equal."	DATALAB	Closed	5	4	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13303400	[Azure]: Convey information message if user creates new folder via bucket browser	"For AWS and GCP it is allowed to create empty folder via Cloud console.
+
+But for Azure it is forbidden to create empty folder from cloud console.
+
+If user creates folder  (via cloud console) and does not upload  any object to it the folder will disappear.
+
+So during folder creation (vi bucket browser) convey information message only for Azure: 'If you do not upload any object to the folder, this folder will be removed on MS Azure'"	DATALAB	Closed	3	3	3680	AZURE, Debian, Front-end, RedHat
+13271263	Minor links altering	"# Get rid of a delay for notebook link
+ # Align Notebook link by left side
+ # Investigate if it is possible to make link copy-able and leave a hint?"	DATALAB	Closed	4	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13300739	[Front-end]: Support access to browser bucket via administration page	"As an admin I want to set permissions to bucket browser per particular users/groups, so that I can distinguish who is able to read/upload/download objects via bucket browser.
+
+*Now we have:*
+
+'Bucket browser':
+ * Allow to delete object from the bucket
+ * Allow to download object from the bucket
+ * Allow to upload object to the bucket
+ * Allow to view object in the bucket
+
+*But change to:*
+
+'Bucket browser actions'
+ * Allow to delete object via bucket browser
+ * Allow to download object via bucket browser
+ * Allow to upload object via bucket browser
+ * Allow to view object via bucket browser
+
+ "	DATALAB	Closed	3	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13276892	Alter action menu for project management	"#  (/) Do not convey project name in action menu. It should be just a project -> 'Edit project', 'Delete project'
+ #   Stop or terminate edge node:
+
+ * (/) There is too space between item list and confirmation question. As a result ""No"" ""Yes"" buttons have very bottom  position in the model.
+ * (/) Disable button 'Yes' if user does not fetch any item
+
+3.  (/)  Give icon from notebook termination for terminate edge node
+
+4.  (/) Extend aria for action menu. For example if user hovers mouse close to margin of action the action is still highlighted but after hitting it the action is not triggered.
+
+5. (/) Change message on confirmation dialog: '<Project_name> will be disconnected.' -> 'Project <project_name> will be decommissioned.'"	DATALAB	Closed	4	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13349070	[Confirmation dialog]: Clear up all previous selected items after canceling	"Confirmation dialog we have for :
+ * environment management page
+ * configuration page
+ * project page
+
+ "	DATALAB	Closed	4	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13284778	[Notebook]: Need to change behavior of Show Active button	"As a user I want to be notified about failing notebook in 'show active' mode so that I do not need to switch to 'show all' mode.
+
+ 
+
+*Case:*
+
+1. on resources_list page 'show active' button is chosen
+ 2. notebook is creating
+ 3. notebook creation fails
+
+It should be possibility to 'notify' user about failed computational resource.
+
+Because in 'show active' mode this notebook will not be portrayed until a user change mode to 'show all'.
+
+ 
+
+*Acceptance criteria:*
+
+1. user should receive notify about unsuccessful notebook creation in 'show active' mode on resource list page
+
+ "	DATALAB	Closed	4	4	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13196593	Report header should be sticky and always present while scrolling down	"As a user I want always to see report header on the top of window during scrolling down so that I will be able to see titles of grid values.
+
+ 
+
+*Acceptance criteria:*
+
+1. report header is always present on the top of window during scrolling down"	DATALAB	Closed	4	4	3680	AZURE, Debian, Front-end, RedHat, pull-request-available
+13292911	Action for notebook should depend on edge node status.	"If edge node is stopped do not allow user to start notebook.
+
+If user hovers mouse 'run' action the hint should appear 'Unable to start notebook until edge node is stopped'.
+
+Do the same as it is implemented for start notebook during its stopping."	DATALAB	Closed	4	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13270421	Issues on promotion page	"*Preconditions:*
+1. User is located on https://apache.github.io/incubator-dlab/#
+
+*Steps to reproduce:*
+1.  Click 'Get Started' button
+2. Click 'Play' button
+3. Click '+' icons for 'Data access problem/'Problems with tools/'Increased IT handholding'/'Lack of security'
+4. Click any icon features
+
+*Actual result:*
+1. 'Get Started' button does not work - nothing is happened
+2. 'Play' button does not work - nothing is happened
+3.  Icons for 'Data access problem/'Problems with tools/'Increased IT handholding'/'Lack of security' do not work nothing - is happened
+4. Any icon features  do not work nothing - is happened
+
+*Expected result:*
+1. 'Get Started' button - works
+2. 'Play' button - works - video is running
+3.  Icons for 'Data access problem/'Problems with tools/'Increased IT handholding'/'Lack of security' work
+4. Any icon features  work - it is switched by features
+
+*************************************************************
+Also add 'GCP' in 'Flexible deployment architecture'
+"	DATALAB	Closed	4	1	3680	Front-end, pull-request-available
+13358168	Add a vertical scrollbar for project	If there are a lot of groups project grid extends. Please add a vertical scrollbar.	DATALAB	Closed	4	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13345061	[Audit]: The column width should not be extended	If any grid value is too long the column width should have fixed width and not  be changed.	DATALAB	Closed	4	3	3680	pull-request-available
+13196480	Need to change behavior of Show Active button	"As a user I want to be notified about failing computational resources in 'show active' mode so that I do not need to switch to 'show all' mode.
+
+ 
+
+*Case:*
+
+1. on resources_list page 'show active' button is chosen
+2. computational resource is creating
+3. creating computational resource fails
+
+It should be possibility to 'notify' user about failed computational resource.
+
+Because in 'show active' mode this computational resource will not be portayed untill a user change mode to 'show all'.
+
+ 
+
+*Acceptance criteria:*
+
+1. user should receive notify about unsuccessful computational resources creating in 'show active' mode on resource list page
+
+ "	DATALAB	Closed	4	4	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13318852	[Project quota]: It is forbidden to set limit which contains more than 10 numbers	"*Preconditions:*
+
+1. SSN is created
+
+*Steps to reproduce:*
+
+1. Set project quota '123456789012'
+
+*Actual result:*
+ # Error message appears 'Numeric value (12345678901) out of range of int↵ at [Source: (org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream); line: 1, column: 41]↵ at [Source: (org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream); line: 1, column: 30] (through reference chain: java.util.ArrayList[0]->com.epam.dlab.backendapi.domain.UpdateProjectBudgetDTO[""budget""])'
+ # Indicated quota is not set up
+
+Expected result:
+ # Error message does not appear
+ # Indicated quota is set up
+
+Show error message:  'Project budget cannot be higher than 1000000000'"	DATALAB	Closed	4	1	3680	AWS, AZURE, Back-end, Debian, GCP, RedHat, pull-request-available
+13339148	[Git credentials]: DataLab UI sticks after typing more than 29 symbols in 'Host name' text box	"*Preconditions:*
+1. SSN is created
+*Steps to reproduce:*
+1. Click on 'Git credentials' button
+2. Enter more than 29 symbols in 'Host name' text box
+*Actual result:*
+1. DataLAb Web UI sticks
+2. It's impossible to do any Web UI action
+*Expected result:*
+1. DataLAb Web UI does not stick
+2. It's possible to do any Web UI action"	DATALAB	Closed	3	1	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13311522	It is passed default endpoint instead of usable one	"*Preconditions:*
+ # Project is created for local end remote endpoints
+
+*Steps to reproduce:*
+ # Upload object for remote endpoint
+
+*Actual result:*
+ # Upload could be failed or successful
+ # It is passed default endpoint
+
+*Expected result:*
+ # Upload is successful
+ # It is passed usable endpoint
+
+ *Merge this fix into develop and epm-v2.3.0*"	DATALAB	Closed	3	1	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13302130	[Front-end]: Support localization 	"As user I want to have formats for dates, currency which are used in my time zone.
+----
+Using proper local formats for dates, currency for all DLab.
+
+Github issue: [https://github.com/apache/incubator-dlab/issues/732]"	DATALAB	Closed	4	3	3680	AWS, AZURE, Debian, GCP, Github_issue, RedHat, pull-request-available
+13352447	Ged rid of error message if self-service is in starting stage	If Self-service starts  a restart process do not convey error message that restart fails because it is in the process which are not finished yet.	DATALAB	Closed	4	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13305890	[Front-end][Part5]: Set of improvements for bucket browser	"# (/) Adjust according to screenshot 'Improvements' - {color:#00875a}*verified*{color}
+ # (/) Adjust according to screenshot 'Changes' - {color:#00875a}*verified*{color}
+ # {color:#172b4d}(/) Move icons to the left side, because scrollbar covers cancel opportunity - {color:#00875a}*verified*{color}{color}"	DATALAB	Closed	4	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13327384	[Environment management]: Space between compute status and icon should not change if expand head grid	Especially it is blatant in small windows.	DATALAB	Closed	5	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13285920	[Billing report page]: Billing issues for user who has not administrative role	"*1.* If user is not admin 'Refresh'/'Export' buttons are not aligned by the right side.
+
+Header is overlapped.
+
+*2.* If user is not admin it is forbidden to view billing, but billing should be allowed"	DATALAB	Closed	4	1	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13285809	Portray appropriate image if user clicks notebook/computational resource link	"# For notebook UI link
+ # For ungit link
+ # For TensorFlow link (only for GPU)
+ # For Job-tracker of computational resource link"	DATALAB	Closed	3	3	3680	Debian, Front-end, GCP
+13323536	Enhancement for library management	"1. Do not allow to add java library if library is not fetched by user form dropdown-list
+
+2. Could we sort group in dropdown list in grid as it is sorted in select group drop down list?"	DATALAB	Closed	4	4	3680	AWS, Azure, Debian, Front-end, GCP, RedHat, pull-request-available
+13280925	[Environment management][Library management]: Set of minor issues	"# (/) Environment management page: header should not move to left during extending.
+ # (/) Library management pop up : installation status is not auto-updated
+ # (/) Computational resources pop up: Hint for slave is absent"	DATALAB	Closed	5	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13258291	[Front-end]: Support a multiple cloud functionality	As a user I want to use more than one endpoints for a project so that one project can have environment on AWS, Azure, GCP.	DATALAB	Closed	3	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat, pull-request-available
+13279535	[List of Resource][Environment Management]: Report header should be sticky and always present while scrolling down	"As a user I want always to see List of Resource/Environment Management header on the top of window during scrolling down so that I will be able to see titles of grid values.
+
+ 
+
+*Acceptance criteria:*
+
+1. List of Resource/Environment Management header is always present on the top of window during scrolling down"	DATALAB	Closed	4	4	3680	AZURE, Debian, Front-end, RedHat, pull-request-available
+13311912	Token configuration	"# Extend token up to one hour
+ # Refresh token in 25 minutes for ending"	DATALAB	Closed	3	3	3680	AWS, AZURE, Debian, Front-end, GCP, RedHat
+13437773	[GCP] Investigate keycloak client configuration on gcp-test-252	Investigate why Keycloak client was not properly configured by Jenkins job execution	DATALAB	Closed	4	1	6459	Deployment, DevOps, GCP
+13340138	EMR creation fails	EMR creation fails on AWS	DATALAB	Closed	3	1	6459	pull-request-available
+13474691	[DevOps] Billing is absent for GCP DataLab environment	"*Preconditions:*
+ # Project is created on GCP
+
+*Steps to reproduce:*
+ #  Go to ""Billing report"" page
+
+*Actual result:*
+ # Billing report is absent
+
+*Expected result:*
+ # Billing report is present"	DATALAB	Closed	3	1	6459	DevOps, GCP
+13382091	[GCP][Investigation][Spark Standalone cluster][Dataproc] Investigate why Flight data visualization Py3 fails	"The case was found on GCP during Flight data visualization Py3 running on Spark Standalone cluster. Perhaps it is related to other clouds.
+
+But the same playbook is successfully running for local kernel."	DATALAB	Open	4	3	6459	Debian, DevOps, GCP
+13418814	[Azure][GPU] Obey consistency for Apache Spark standalone cluster creation	"Add GPU computing for Apache Spark standalone cluster for Azure like it is available for AWS and GCP
+
+please, see attachment (gpu_azure_spark.png)"	DATALAB	Open	3	3	6459	Azure, DevOps
+13423946	It is impossible to use gsutil command via Notebook UI terminal	"*Preconditions:*
+ # Jupyter is created on GCP
+
+*Steps to reproduce:*
+ # Go to Jupyter terminal via Notebook UI
+ # Run a command gsutil ls gs://bucket_name
+
+*Actual result:*
+ # Request is retrying
+ # Command runs unsuccessfully
+ # Connection to bucket is not set up
+
+*Expected result:*
+ # Command runs successfully
+ # User sees list of a bucket
+
+----
+On AWS it is possible to view/load data on S3 via CLI.
+aws s3 ls s3://bucket-name
+!image-2022-01-21-11-34-22-810.png!"	DATALAB	Closed	4	1	6459	Debian, DevOps, GCP, Mentor_program
+13434353	[GCP] Dataproc dataengine-service creation error 	"*Preconditions:*
+ # Jupyter notebook is in running status
+
+*Steps to reproduce:*
+ # Create Dataproc dataengine-service
+
+*Actual result:*
+ # Dataengine-service creation fails(stuck on stage creation)
+
+{code:java}
+logging.error('Function init_datalab_connection error:', str(err))
+Message: 'Function init_datalab_connection error:'
+Arguments: ('',) {code}
+*Expected result:*
+ # Dataengine-service creation is successful"	DATALAB	Closed	3	1	6459	DevOps, GCP
+13325469	[GCP]: Investigate why VPC remains after SSN termination	"If VPCs remain and collect it is impossible to create SSN due to maximum VPC name reaching.
+
+Investigate why VPC remains after SSN termination
+----
++Case when maximum VPC name is reached+
+
+*Step to reproduce:*
+
+1. Create SSN via Jenkins job
+
+*Actual result:*
+ # SSN creatin fails: 'VPC vi-gcp-0109-vpc has been created
+ Traceback (most recent call last):
+ File ""/root/scripts/ssn_prepare.py"", line 115, in <module>
+ ssn_conf['vpc_selflink'] = GCPMeta.get_vpc(ssn_conf['vpc_name'])['selfLink']'
+
+*Expected result:*
+
+1. SSN creation is successful
+
+ "	DATALAB	Closed	4	3	6459	Debian, DevOps, GCP
+13493394	[AWS] SSN creation fails with error 'Unable to find image id'	"*Steps to reproduce:*
+ # Create SSN via Jenkins job
+
+*Actual result:*
+ # SSN creation fails
+
+{code:java}
+Unable to find image id with name: ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20201026{code}
+*Expected result:*
+ # SSN creation is successful"	DATALAB	Closed	2	1	6459	AWS, Debian, DevOps, RedHat, pull-request-available
+13293357	[AWS]: Notebook creation from custom image does not use custom image	"*Preconditions:*
+ # Notebook is created on AWS
+ # Custom image is created from Notebook
+
+*Steps to reproduce:*
+
+1. Create Notebook from custom image
+
+*Actual result:*
+ # Notebook creation does not use custom image
+ # Notebook creation uses default image
+
+*Expected result:*
+ # Notebook creation uses custom image
+ # Notebook creation does not use default image
+
+
+  "	DATALAB	Closed	3	1	6459	AWS, Debian, DevOps, RedHat, pull-request-available
+13328241	[Next release][Plugin architecture][DevOps]: Implement possibility to turn on billing after DataLab deployment	 Embed and run billing as a service.	DATALAB	Reopened	3	3	6459	AWS, AZURE, Debian, DevOps, GCP, RedHat
+13354934	[DATALAB-2091]: Update EMR	"EMR versions 5.12.0(spark v.2.3.2)/6.0.0(spark v.2.4.4->v.6.2.0(spark v.3.0.1)/ 6.0.0?/5.12.0?
+
+[EMR releases|https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-release-components.html]
+
+It should be updated in branch 'DATALAB-2091'."	DATALAB	Closed	3	3	6459	AWS, Debian, DevOps, RedHat, pull-request-available
+13354920	[DATALAB-2091]: Update Zeppelin	"Zeppelin versions 0.8.0->0.9.0.
+
+[Apache Zeppelin releases|https://issues.apache.org/jira/secure/ReleaseNote.jspa?version=12341035&projectId=12316221]
+
+It should be updated in branch 'DATALAB-2091'."	DATALAB	Closed	3	3	6459	AWS, AZURE, Debian, DevOps, GCP, RedHat
+13423213	[AWS][Azure] Notebooks creation error during scala files downloading	"*Preconditions:*
+ # Project is created
+
+*Steps to reproduce:*
+ # Create Jupyter or Zeppelin notebook
+
+*Actual result:*
+ # Error during notebook creation
+
+*Expected result:*
+ # Notebook is created successfully
+
+ "	DATALAB	Closed	3	1	6459	AWS, Azure, DevOps, pull-request-available
+13471752	[DevOps] Azure HDInsight: Add scheduler	Add scheduler for terminate of Azure HD Insight data engine services	DATALAB	Closed	3	3	6459	pull-request-available
+13353269	[GCP]: Fix issue with Superset authentication	"*Preconditions:*
+ # Superset is created
+
+*Steps to reproduce:*
+ # Go to Superset UI
+
+*Actual result:*
+ # User is not successfully logged in Superset UI
+
+*Expected result:*
+ # User is successfully logged in Superset UI"	DATALAB	on hold	4	1	6459	Debian, DevOps, GCP, Known_issues(release2.4)
+13334965	[GCP]: Compute configuration fails	"This bug was found on Jupyter for Dataproc (Data Engine Service) creation and for Zepeplin for Spark Standalone cluster. Perhaps it is related to the other notebook templates.
+
+*Preconditions:*
+
+1. Jupyter is created
+
+*Steps to reproduce:*
+
+1. Create Dataproc for Jupyter
+
+*Actual result:*
+
+1. Dataproc creation fails on stage of configuration
+
+*Expected result:*
+
+1. Dataproc creation is successful
+
+ 
+
+ "	DATALAB	Closed	3	1	6459	Debian, DevOps, GCP, pull-request-available
+13210129	[Azure][AWS]: Zeppelin/Rstudio creations from custom image fails on removing cluster kernels	"The bug was found on *Azure(RedHat)*. This bug reproduces if create notebook from custom image which (the last) was created during spark cluster running.
+
+*Preconditions:*
+Custom image for Zeppelin is created when spark cluster is running
+
+*Steps to reproduce:*
+ # Terminate Zeppelin with spark cluster or only cluster
+ # Create Zeppelin from custom image
+
+*Actual result:*
+Zeppelin fails with error:
+Failed to remove cluster kernels
+Please, see attachment
+
+!Image.PNG!
+
+*Expected result:*
+Zeppelin is created"	DATALAB	Open	4	1	6459	2.3_old, AZURE, Debian, DevOps, Known_issues(release2.2), Known_issues(release2.3), Known_issues(release2.4), Known_issues(release2.5.1), Known_issues(release2.6), RedHat
+13475890	[AWS] Add preexisting security groups for remote endpoints	Security groups always are created during endpoint creation. Add ability to use existing security groups.	DATALAB	Closed	3	3	6459	Debian, DevOps, RedHat, pull-request-available
+13219906	[GCP]: Instance connection is unsuccessful via GCP console due to failed to read key	"*Preconditions:*
+ # Edge is created
+ # GCP console is open
+
+ 
+
+*Steps to reproduce:*
+ # Click SSH drop down list related SSN or Edge
+ # Choose 'open in browser window using provided private SSH key'
+ # Choose your key.pem
+
+ 
+
+*Actual result:*
+
+1. Connection is not successful
+
+2. Error message appears 'Select a private ECDSA or RSA key file to sign into the VM or connect with a generated SSH key.'
+
+ 
+
+*Expected result:*
+
+1. Connection is successful
+
+Now connection fails and it does not propose to upload a key (see image-2022-08-15-11-10-54-046)"	DATALAB	Open	4	1	6459	Debian, DevOps, GCP
+13443316	[TPCP] Investigate git credentials storing and connection with ungit	"# Investigate what information is transferred to ungit during git credentials adding in order to find out the chain of connection. There is a case when several users use the same VM and links to JupyterUI/ungit. In this situation all changes are wrote by user who had created instance, but not from user who really had made changes. 
+ # Investigate how to store git credential in secure way on WM. Now they are stored in hidden folder in open way which are visible who has link to VM.
+ # Investigate how transfer git credentials in secure way in IDE (Jupyter UI) in code.
+ # After adding git credentials in Jupyter terminal I could not push changes:
+
+{code:java}
+datalab-user@ip-172-31-50-180:~/demo_aws_snowflake$ git status
+On branch master
+Your branch is up to date with 'origin/master'.Untracked files:
+  (use ""git add <file>..."" to include in what will be committed)
+        Scala_data_preparation.jsonnothing added to commit but untracked files present (use ""git add"" to track)
+datalab-user@ip-172-31-50-180:~/demo_aws_snowflake$ git add -A
+datalab-user@ip-172-31-50-180:~/demo_aws_snowflake$ git status
+On branch master
+Your branch is up to date with 'origin/master'.Changes to be committed:
+  (use ""git restore --staged <file>..."" to unstage)
+        new file:   Scala_data_preparation.jsondatalab-user@ip-172-31-50-180:~/demo_aws_snowflake$ git commit -m 'test'
+datalab-user@ip-172-31-50-180:~/demo_aws_snowflake$ git status
+On branch master
+Your branch is up to date with 'origin/master'.Changes to be committed:
+  (use ""git restore --staged <file>..."" to unstage)
+        new file:   Scala_data_preparation.jsondatalab-user@ip-172-31-50-180:~/demo_aws_snowflake$ git push origin/master
+fatal: 'origin/master' does not appear to be a git repository
+fatal: Could not read from remote repository.Please make sure you have the correct access rights
+and the repository exists.
+datalab-user@ip-172-31-50-180:~/demo_aws_snowflake$ git push
+Everything up-to-date
+datalab-user@ip-172-31-50-180:~/demo_aws_snowflake$ git push origin
+Everything up-to-date
+datalab-user@ip-172-31-50-180:~/demo_aws_snowflake$ git push origin master
+Everything up-to-date
+datalab-user@ip-172-31-50-180:~/demo_aws_snowflake$ git config --list
+user.name=Example User
+user.email=example@example.com
+init.templatedir=/home/datalab-user/.git/templates
+core.excludesfile=/home/datalab-user/.gitignore
+http.proxy=http://ec2-3-72-116-155.eu-central-1.compute.amazonaws.com:3128
+https.proxy=http://ec2-3-72-116-155.eu-central-1.compute.amazonaws.com:3128
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://gitlab.com/accountdemo1/demo_aws_snowflake.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+user.name=demo
+user.email=demo@epam.co {code}"	DATALAB	Open	3	3	6459	AWS, AZURE, Debian, DevOps, GCP, RedHat, TPCP
+13345808	Notebook creation fails on stage of 'IRkernel' installation	"*Preconditions:*
+ # Project is created
+
+*Steps to reproduce:*
+ # Create RStudio/Jupyter/Zeppelin/Rstudio with TensorFlow
+
+*Actual result:*
+ # RStudio/Jupyter/Zeppelin/Rstudio with TensorFlow creation fails with error:
+
+Error: Failed to install 'IRkernel' from GitHub:
+[datalab-user@172.31.16.2] out: (converted from warning) package ‘pbdZMQ’ is not available (for R version 3.4.4)
+
+*Expected result:*
+ # RStudio/Jupyter/Zeppelin/Rstudio with TensorFlow creation is successfully"	DATALAB	Closed	2	1	6459	AWS, AZURE, Debian, DevOps, GCP, RedHat, pull-request-available
+13411989	[Azure] Custom image creation fails	"*Preconditions:*
+ # Jupyter is created on Azure
+
+*Steps to reproduce:*
+ # Create custom image from Jupyter
+
+*Actual result:*
+ # Custom image creation fails
+
+*Expected result:*
+ # Custom image creation is successful
+
+ "	DATALAB	Closed	3	1	6459	AZURE, Debian, DevOps, RedHat, pull-request-available
+13282550	[Azure]: Project creation fails	"*Preconditions:*
+
+1. SSN is created
+
+*Steps to reproduce:*
+
+1. Create project
+
+*Actual result:*
+ # Project creation fails:
+
+Failed to generate variables dictionary. Exception: 'default_endpoint_name'
+
+*Expected result:*
+
+Project creation is successful"	DATALAB	Closed	2	1	6459	AZURE, Debian, DevOps, RedHat, pull-request-available
+13339218	SSN creation fails on step of Keycloack connection	"This bug was found on GCP. Perhaps it is related for all clouds.
+
+*Steps to reproduce:*
+ #  Create SSN
+
+*Actual result:*
+ # SSN creation fails
+
+*Expected result:*
+ # SSN creation is successful
+
+----
+On top of that I could not login Keycloak Web UI."	DATALAB	Closed	3	1	6459	Debian, DevOps, GCP
+13345483	[DevOps]: Handling failed status	"If status is failed and instance is absent in Cloud Web Console the status remains failed.
+
+If status is failed and instance is present in Cloud Web Console the system has to try (3 attempts) to stop this instance and send notifications to user/admin."	DATALAB	In Progress	3	3	6459	AWS, AZURE, Debian, DevOps, GCP, RedHat
+13334115	Rewrite infrastructure deployment on Python3	"There was a case when project creation was failed.
+
+And SSN termination failed due to searching non-created bucket and did not continue  to search the other buckets.
+
+As e result the other buckets are still available on cloud console. 
+
+Could you take into consideration this case during rewriting for Py3?"	DATALAB	Closed	3	3	6459	AWS, AZURE, Debian, DevOps, GCP, RedHat, pull-request-available
+13408655	[AWS][Azure] DeepLearning creation fails on command  pip3 install -U keyrings.alt backoff	"*Preconditions:*
+
+1. Project1 is created on AWS
+
+*Steps to reproduce:*
+
+1. Create DeepLearning in Project1
+
+*Actual result:*
+ # DeepLearning creation fails
+
+*Expected result:*
+ # DeepLearning creation is successful
+
+ "	DATALAB	Closed	3	1	6459	AWS, Debian, DevOps, RedHat, pull-request-available
+13407310	Get rid of  Odahuflow cloud tab for JupyterLab	"There is an  Odahuflow cloud tab  in JupyterLab.
+
+Why do we need it?
+!image-2021-10-19-17-34-32-470.png!"	DATALAB	Closed	3	3	6459	AWS, Azure, Debian, DevOps, GCP, RedHat, pull-request-available
+13357894	[GCP]: SSN deployment fails on command 'unattended-upgrades -v'	"*Steps to reproduce:*
+ # Deploy SSN via Jenkins job on GCP
+
+*Actual result:*
+ # SSN deployment fails
+
+{code:java}
+Requested: unattended-upgrades -v
+Executed: sudo -S -p 'sudo password:'  /bin/bash -l -c ""unattended-upgrades -v""
+Aborting.
+{code}
+*Expected result:*
+ # SSN deployment is successful"	DATALAB	Closed	1	1	6459	Debian, DevOps, GCP
+13348097	SSN deployment fails if FQDN and step-certificates are not indicated	"*Steps to reproduce:*
+ # Deploy SSN and do not indicate FQDN/step-certificate
+
+*Actual result:*
+ # SSN deployment fails
+
+*Expected result:*
+ # SSN deployment is successful
+
+[~rkulynych], please test it."	DATALAB	Closed	4	1	6459	Debian, DevOps, GCP
+13323552	[Let's Encrypt certificates]: Edge creation fails on stage of stopping nginx.service	"*Preconditions:*
+ # Create ssn is created with extra values:
+
+- --conf_letsencrypt_enable true
+
+- --conf_letsencrypt_domain_name
+
+2. New cloud DNS is created for SSN
+
+*Steps to reproduce:*
+ # Create project
+ # Create new cloud DNS for edge node
+
+*Actual result:*
+
+1. Project creation fails
+
+*Expected result:*
+
+1. Project creation is successful"	DATALAB	Closed	3	1	6459	AWS, AZURE, Debian, DevOps, GCP, RedHat, pull-request-available
+13276449	Images are not included in billing report	"*Preconditions:*
+ # Notebook is created
+ # Billing is available for deployed DLab
+
+*Steps to reproduce:*
+
+1. Go to billing report page
+
+*Actual result:*
+
+1. Image is not absent in billing report page
+
+*Expected result:*
+
+1. Image is present in billing report page
+----
+(!) Images are not included  even in billing on cloud console. 
+
+Check if images are correctly tagged."	DATALAB	Closed	4	1	6459	AWS, AZURE, Debian, DevOps, GCP, RedHat, pull-request-available
+13428883	[AWS][Jupyter with TensorFlow] Obey Tensorflow v.2.5.0	"After default dependancy installation TensorFlow version changes 2.5.0 -> 2.5.3.
+
+*Output:*
+
+- TensorFlow 2.5.0.
+
+- Tensorflow Lite 2.5.0
+
+- Should be version connection between TensorFlow, Tensorflow Lite and AWS IoT Greengrass."	DATALAB	Closed	3	3	6459	AWS, Debian, DevOps, RedHat
+13439430	[GCP]DeepLearning UI doesn't work(502 Bad Gateway)	"*Preconditions:*
+ # Edge node(project) is in running status
+
+*Steps to reproduce:*
+ # Create Deeplearning notebook
+ # Go to notebook UI
+
+*Actual result:* 
+ #  UI does not work 
+
+{code:java}
+502 Bad Gateway {code}
+*Expected result:*
+ # Deeplearnig notebook UI work properly
+
+ "	DATALAB	Closed	3	1	6459	Debian, DevOps, GCP, RedHat, pull-request-available
+13448528	SSN creation fails on stage of npm installation	"*Steps to reproduce:*
+ # Create SSN on AWS/Azure/GCP
+
+*Actual result:*
+ # SSN creation fails
+
+{code:java}
+no_error
+npm notice 
+npm notice New minor version of npm available! 8.11.0 -> 8.12.1
+npm notice Changelog: <https://github.com/npm/cli/releases/tag/v8.12.1>
+npm notice Run `npm install -g npm@8.12.1` to update!
+npm notice 
+npm ERR! code ERESOLVE
+npm ERR! ERESOLVE could not resolve
+npm ERR! 
+npm ERR! While resolving: ng2-ace-editor@0.3.9 {code}
+*Expected result:*
+ # SSN creation is successful"	DATALAB	Closed	1	1	6459	AWS, Azure, Debian, DevOps, GCP, pull-request-available
+13316861	[Azure][DevOps]: Bucket browser	"As a user I want to  use S3 browser so that I can manage my buckets and objects via DLab UI.
+
+ 
+
+*Acceptance criteria:*
+
+*1.* User has access endpoint_shared bucket and project bucket (only if he is assigned to this project)
+
+*2.* Another user does not have access to project bucket (if he is not assigned to this project)
+
+*3.* Administrator has access to all buckets
+
+*4.* User can upload and download files to and from bucket
+
+*5.* User can create public URLs to share the files
+
+*6.* User can set Access Control on buckets and files only for project bucket?
+----
+ 
+
+Fill azureAuthFile: AZURE_AUTH_FILE_PATH
+
+Example:
+ authenticationFile: AUTHENTICATION_FILE
+# Billing configuration for RateCard API. For more details please see [https://msdn.microsoft.com/en-us/library/mt219004.aspx]
+ offerNumber: OFFER_NUMBER
+ currency: CURRENCY
+ locale: LOCALE
+ regionInfo: REGION_INFO
+  "	DATALAB	Closed	3	2	6459	AZURE, Debian, DevOps, RedHat, pull-request-available
+13412727	[Azure][GCP] Investigate why it is enable to establish connection during Instance creation	"This case was reproduces several times for DeepLearning/Zeppelin creation.
+Please, investigate the reason and if we could prevent the such case.
+----
+The same error was found on GSP during Dataproc creation on Jupyter.
+
+ "	DATALAB	Open	4	3	6459	AZURE, Debian, DevOps, GCP, RedHat
+13433058	"[GCP] Error during Dataproc cluster creation ""Selected software image version is vulnerable to remote code execution"""	"*Preconditions:*
+ # Jupyter notebook is in running status
+
+*Steps to reproduce:*
+ # Create Dataproc cluster
+
+*Actual result:*
+ # Dataproc cluster creation error
+
+{code:java}
+""Selected software image version 2.0.0-RC22-ubuntu18 is vulnerable to remote code execution due to a log4j vulnerability (CVE-2021-44228) and cannot be used to create new clusters. Please upgrade to image versions >=1.3.95, >=1.4.77, >=1.5.53, or >=2.0.27. For more information, see https://cloud.google.com/dataproc/docs/guides/recreate-cluster"". Details: ""Selected software image version 2.0.0-RC22-ubuntu18 is vulnerable to remote code execution due to a log4j vulnerability (CVE-2021-44228) and cannot be used to create new clusters. Please upgrade to image versions >=1.3.95, >=1.4.77, >=1.5.53, or >=2.0.27.""> {code}
+*Expected result:*
+ # Dataproc cluster creation is successful"	DATALAB	Closed	3	1	6459	Debian, DevOps, GCP, RedHat, pull-request-available
+13336080	[GCP]: Not all resources are terminated after endpoint disconnection	"*Preconditions:*
+ # Any notebook/compute is created on remote endpoint for GCP
+
+*Steps to reproduce:*
+ # Disconnect remote endpoint on GCP
+ # Wait docker finish of  execution
+ # Delete endpoint via Jenkins job
+
+*Actual result:*
+ # Endpoint deletion fails
+
+*Expected result:*
+ # Endpoint deletion is successful
+
+ "	DATALAB	Closed	4	1	6459	Debian, DevOps, GCP, pull-request-available
+13378270	Project creation fails on Python3	"*Steps to reproduce:*
+ # Run auto-test
+
+*Actual result:*
+ # Docker for project creation executes with 1
+ # Project is still in Creating status in WEB DataLab UI
+
+*Expected result:*
+ # Docker for project creation executes with 0
+ # Project is in Running status in WEB DataLab UI"	DATALAB	Closed	1	1	6459	AZURE, Debian, DevOps, GCP, RedHat
+13429332	[AWS][Jupyter with TensorFlow] Standalone Spark cluster creation fails	"*Preconditions:*
+ # Jupyter with TensorFlow is in running status
+
+*Steps to reproduce:*
+ # Create Standalone Spark cluster
+
+*Actual result:*
+ # Standalone Spark cluster creation fails
+
+{code:java}
+Volume of size 30GB is smaller than snapshot 'snap-0601eb3f4947984e2', expect size >= 32GB {code}
+*Expected result:*
+ # Standalone Spark cluster creation is successful"	DATALAB	Closed	4	1	6459	AWS, Debian, DevOps, RedHat, pull-request-available
+13323965	Edge creation fails	"*Preconditions:*
+
+1. SSN is created
+
+*Steps to reproduce:*
+
+1. Create edge nde
+
+*Actual result:*
+
+1. SSN creation fails
+
+*Expected result:*
+
+1. SSN is created succwssful"	DATALAB	Closed	1	1	6459	AWS, AZURE, Debian, DevOps, GCP, RedHat, pull-request-available
+13327625	[Azure][GCP]: Sometimes notebook creation fails on command mkfs.ext4 -F /dev/sdc1	"*Preconditions:*
+
+1. Project is created on Azyre
+
+*Steps to reproduce:*
+
+1. Create any Notebook
+
+*Actual result:*
+
+1. Notebook creation fails on stage of mkfs.ext4 -F /dev/sdc1
+
+*Expected result:*
+ # Notebook creation is successful
+
+----
+The bug appeared on GCP 22.06.2021 for Zeppelin."	DATALAB	Closed	4	1	6459	AZURE, Debian, DevOps, GCP, RedHat, pull-request-available
+13325535	JupyterLab image is not created during the first notebook creation	"*Preconditions:*
+
+1. Project is created
+
+*Steps to reproduce:*
+
+1. Create JupyterLab
+
+*Actual result:*
+ # JupyterLab (instance) is created
+ # JupyterLab (image) is not created
+
+*Expected result:*
+ # JupyterLab (instance) is created
+ # JupyterLab (image) is created"	DATALAB	Closed	4	1	6459	AWS, Debian, DevOps, GCP, RedHat, pull-request-available
+13318251	[AWS][Jupyter]: Investigate if running code for Data Engine Service uses GPU	"EMR (v5.30.0) with shape p2.xlarge is created for Jupyter.
+1.  Running code for TensorFlow (cats/dogs recognition) is not successfully. It requires 'cv2' and it is impossible to install 'cv2' via console, and via Web UI DLab the installation fails
+
+2. If run codes:
+- https://weeraman.com/put-that-gpu-to-good-use-with-python-e5a437168c01
+- https://www.geeksforgeeks.org/running-python-script-on-gpu/
+It is shown that GPU is not used:"	DATALAB	Open	3	3	6459	AWS, Debian, DevOps, RedHat
+13353099	[DevOps]: Show Apache Spark standalone cluster version on DataLab Web UI	"# Show Data Engine version in Select cluster type dropdown value if user wants to create a Data Engine:
+
+Apache Spark standalone cluster x.x.x.
+ 
+2.  Show Data Engine version on Data Engine name popup
+Cluster version: x.x.x"	DATALAB	Open	4	4	6459	AWS, AZURE, Debian, DevOps, GCP, RedHat
+13291271	[GCP]: Notebook termination fails if notebook contains Dataproc	"Dataproc was created on Jupyter. However i think it is related to all notebooks.
+
+*Preconditions:*
+
+1. Dataproc is created
+
+*Steps to reproduce:*
+
+1. Terminate notebook
+
+Actual result:
+
+1. Notebook termination fails
+
+*Expected result:*
+
+1. Notebook termination is successful"	DATALAB	Closed	3	1	6459	Debian, DevOps, GCP
+13410629	Jupyter creation fails on stage of fetching https://dl.bintray.com/sbt/debian/InRelease	"*Preconditions:*
+ # Project is created
+
+*Steps to reproduce:*
+ # Create Jupyter
+
+*Actual result:*
+ # Jupyter creation fails
+
+*Expected result:*
+ # Jupyter creation is successful
+
+ "	DATALAB	Closed	3	1	6459	AWS, AZURE, Debian, DevOps, GCP, RedHat, pull-request-available
+13371990	Sometimes project creation fails on stage of luarocks installation	"*Preconditions:*
+ # SSN is created
+
+*Steps to reproduce:*
+ # Create a project
+
+*Actual result:*
+ # Project creation fails
+
+{code:java}
+ Error: Failed installing dependency: https://luarocks.org/lua-resty-session-3.8-1.src.rock - Could not fetch rock file: Error fetching file: Failed downloading https://luarocks.org - Failed downloading https://luarocks.org/lua-resty-session-3.8-1.src.rock - /var/cache/luarocks/https___luarocks.org/lua-resty-session-3.8-1.src.rock
+{code}
+*Expected result:*
+ # Project is created successful"	DATALAB	Closed	1	1	6459	AWS, AZURE, Debian, DevOps, GCP, RedHat, pull-request-available
+13409871	[Azure] [Remote R kernel] Sometimes Flights data preparation/visualization runs with error	" *Preconditions:*
+ # Data Engine is in running status on Jupyter
+
+*Steps to reproduce:*
+ # Got to Jupyter UI
+ # Run Flights data Preparation/Visualization for R remote kernel
+
+*Actual result:*
+ # Playbook running fails
+
+{code:java}
+An error was encountered:
+Spark package found in SPARK_HOME: /opt/spark
+[1] ""Error in writeJobj(con, object): invalid jobj 1"" {code}
+*Expected result:*
+ # Playbook running is successful
+
+ (i) Sometimes restart kernel/shutdown playbook helps.
+
+(i) The error was not found on local R kernel
+
+(i) Approximately 60-70% the bug is reproduced."	DATALAB	Open	4	1	6459	AZURE, Debian, DevOps, Known_issues(release2.5.1), Known_issues(release2.6), RedHat
+13284635	[GCP]: Value of user_tag should contain username but not random generated value	"Example:
+For user - demo1_test1@epam.com the value for user tag should be 'user : demo1-test1'.
+See attachment"	DATALAB	Closed	4	3	6459	Debian, DevOps, GCP, RedHat, pull-request-available
+13429343	Investigate if the same types of kernels should be for local & remote kernels	"For example, for Jupyter with tensor flow we have
+ # local kernel Local PySpark (Python-3.7.9 / Spark-3.0.1 )
+ # remote kernels:
+ ** PySpark (Python-3.7/Spark-3.0.1)
+ ** Spark (Scala-2.12.10/Spark-3.0.1)
+
+(?)Why do we don't have scala for local kernel?
+
+ "	DATALAB	Open	4	3	6459	AWS, Debian, DevOps, RedHat
+13286535	[Azure]: Flight data visualization runs error warning on RStudio	"*Preconditions:*
+ # SSN is created on Azure
+ # Remote endpoint is created on Azure
+ # RStudio is created on remote endpoint
+
+*Steps to reproduce:*
+
+1. Run Flight data visualization on RStudio
+
+*Actual result:*
+
+1. Playbook runs with error
+
+*Expected result:*
+
+1. Playbook runs without error"	DATALAB	Closed	4	3	6459	AZURE, Debian, DevOps
+13358824	[GCP]: SSN deployment fails on steps of 'rsa' downloading 	"*Steps to reproduce:*
+ # Deply SSN on GCP via Jenkins job
+
+*Actual result:*
+ # SSN deployment fails
+
+{code:java}
+Downloading rsa-4.7.1.tar.gz (38 kB) [91mERROR: Package 'rsa' requires a different Python: 2.7.17 not in '>=3.5, <4'{code}
+*Expected result:*
+ # SSN deployment is successful"	DATALAB	Closed	1	1	6459	Debian, DevOps, GCP, pull-request-available
+13310584	[Branch-515][Azure]: Data engine creation fails on Jupyter/Rstudio/Zeppelin	"*Precondition:*
+
+1. Jupyter is created
+
+*Steps to reproduce:*
+
+1. Create spark cluster
+
+*Actual result:*
+
+1. Spark cluster creation fails
+
+*Expected result:*
+ # Spark cluster is created
+
+(i) On top of that Spark cluster is not created successfully on *RStudio/Zeppelin* on *Azure* (the same *mistake*). 
+
+ "	DATALAB	Closed	3	1	6459	AZURE, Debian, DevOps, Known_issues(release2.4), pull-request-available
+13484027	[Azure][Jupyter] HDInsight is still available in the kernel list after its termination	"*Preconditions:*
+1. HDInsight is in running status on the Jupyter
+*Steps to reproduce:*
+1. Terminate HDInsight
+2. Go to kernel list
+
+*Actual result:*
+
+1. Remote kernel from stopped HDInsight is available in the list
+
+*Expected result:*
+
+1. Remote kernel from stopped HDInsight isn't available in the list
+
+ "	DATALAB	Closed	4	1	6459	AZURE, DevOps
+13353227	[DevOps]: Support library installation if name contains square brackets	Example of python library snowflake-connector-python[pandas].	DATALAB	Closed	4	3	6459	AWS, AZURE, Debian, DevOps, GCP, RedHat
+13376751	[Py3]: Library installation from group Python3/others fails if library name is not found	"The bug was found in branch *DATALAB-2091*.
+
+*Preconditions:*
+ # User is located on Manage libraries pop up
+
+*Steps to reproduce:*
+ # Install non-existent library in group Python3/Others
+
+*Actual result:*
+ # Docker runs with 1
+ # Library status sticks Installing in WEB DATALAB UI
+
+*Expected result:*
+ # Docker runs with 0
+ # Library status is 'Invalid name' in WEB DATALAB UI
+
+ 
+ 
+ 
+ "	DATALAB	Closed	4	1	6459	AWS, AZURE, Debian, DevOps, GCP, RedHat
+13354919	[DATALAB-2091]: Update RStudio	"RStudio versions 1.2.5033 ->1.4.1103-4/1.3.1093-1.
+
+[RStudio releases|https://support.rstudio.com/hc/en-us/articles/200716783-RStudio-Release-History]
+
+It should be updated in branch 'DATALAB-2091'."	DATALAB	Closed	3	3	6459	AWS, AZURE, Debian, DevOps, GCP, RedHat
+13482713	[DevOps] Implement Python virtual environment usage	"Now cluster uses built in python v3.8.10
+
+It should use python virtual environment v3.7.9(version from datalab.ini)"	DATALAB	Open	3	3	6459	Azure, DevOps
+13416485	[GCP][Azure] Sometimes DeepLearning creation fails with error could not get lock /var/lib/dpkg/lock-frontend	"*Preconditions:*
+ # Project is created on GCP
+
+*Steps to reproduce:*
+ # Create a DeepLearning
+
+Actual result:
+ # DeepLearning creation fails
+
+*Expected result:*
+ # DeepLearning creation is successful"	DATALAB	Closed	4	1	6459	Azure, Debian, DevOps, GCP
+13382077	[Investigation] [Computational resources]: Investigate why playbook running are not shown on master UI	"The bug was found on GCP for all notebooks. Perhaps it is related to other clouds.
+
+ "	DATALAB	Open	4	3	6459	AWS, AZURE, Debian, GCP, RedHat
+13319976	[DevOps]: Convey dependency for custom image	"1.  Show dependencies if library is in 'installation error' status:
+
+Convey which dependencies are installed for notebook (created from custom image) if such dependencies have been installed for notebook which is used for custom image creation
+
+2. Show dependencies if library is in 'installed' status:
+
+Convey which dependencies are installed for notebook (created from custom image) if such dependencies have been installed for notebook which is used for custom image creation
+
+3. Don't show library if it is in 'invalid version' status:
+
+Don't convey library for notebook (created from custom image) if such library has been tried to install for notebook which is used for custom image creation"	DATALAB	Closed	4	3	6459	AWS, AZURE, Debian, DevOps, GCP, RedHat
+13322347	Issues if install library with unfound version	"# If install library with wrong version:
+
+ * for apt/yum for notebook/spark cluster. The library is installed and it is absent that it has been wrong version (+)
+ * for pip3/pip2/others for notebook/compute/. Docker runs with '1' and status is stuck in 'installing' (+)"	DATALAB	Closed	3	1	6459	AWS, AZURE, Debian, DevOps, GCP, RedHat, pull-request-available
+13351492	[GKE]: DeepLearning/Jupyter with TensorFlow creation fails	"*Preconditions:*
+ # DataLab is deployed on GKE
+ # Endpoint is deployed onGCP
+
+*Steps to reproduce:*
+ # Create DeepLearning/Jupyter with TensorFlow
+
+*Actual result:*
+ # DeepLearning/Jupyter with TensorFlow creation fails
+
+*Expected result:*
+ # DeepLearning/Jupyter with TensorFlow creation is successful"	DATALAB	on hold	4	1	6459	Debian, DevOps, GCP, Known_issues(release2.5), Known_issues(release2.5.1), Known_issues(release2.6)
+13283899	[Azure][GCP] Rarely notebook/ssn are not created successful from the first attempt	"25/08/22 Azure, Jupyter creation we should observe about this case (attachment) if it's repeatable.
+----
+This bug was found on Azure/GCP for notebooks Zeppelin (Azure)/Jupyter (Azure)/DeepLearning (GCP)/TenzorFlow (Azure) during auto-test. The second attempt was successful by manually creation.
+
+*Preconditions:*
+
+1. SSN is created on Azure
+
+*Steps to reproduce:*
+
+1. Create Jupyter
+
+*Actual result:*
+
+Jupyter creation fails:
+
+Could not get lock /var/lib/dpkg/lock-frontend - open (11: Resource temporarily unavailable)
+
+*Expected result:*
+
+Jupyter creation is successful
+----
+Also spark cluster is not created (Jupyter) on Azure.
+----
+(!) This bug was reproduced for DeepLearning on GCP (29/10/2020, 23/11/2020, 18/12/2020).
+
+(!) Such kind of bug was reproduced for DeepLearning on AWS (23/11/2020, 18/02/2021. 25/02/2021).
+
+(i) A new bug showed up. See attachment 'Azure-npm-16-04-2021'
+{code:java}
+[datalab-user@52.183.7.69] out: E: The package omsagent needs to be reinstalled, but I can't find an archive for it.
+[datalab-user@52.183.7.69] sudo: cat /tmp/apt-get.log
+[datalab-user@52.183.7.69] out: 
+[datalab-user@52.183.7.69] sudo: npm config set unsafe-perm=true
+[datalab-user@52.183.7.69] out: /bin/bash: npm: command not found
+{code}
+(i) Azure 07/06/2021. SSN creation fails on command apt-get -y install nodejs 2>&1."	DATALAB	Closed	3	1	6459	AWS, AZURE, Debian, DevOps, GCP, Known_issues(release2.3), Known_issues(release2.4), pull-request-available
+13222056	Shell interpreter is absent for some Apache Zeppelin shapes	"*Preconditions:*
+ 1. Apache Zeppelin is created
+
+Steps to reproduce:
+ 1. Go to Zeppelin interpreter
+
+*Actual result:*
+ Shell interpreter is absent
+
+*Expected result:*
+ Shell interpreter is present
+
+Even if Shell interpreter is present the command running fails using the shell for example on GCP:
+
+!Shell interpreter.png!  "	DATALAB	Open	4	1	6459	2.3_old, AWS, AZURE, Debian, DevOps, GCP, Known_issues(release2.2), RedHat, pull-request-available
+13473235	Revise all Jenkins jobs	"Revise all Jenkins job and point out if we need them with respect to the table created by Ruslan.
+If we do not need them - please take appropriate actions."	DATALAB	Closed	4	3	6459	DevOps
+13260094	[Azure]: SSN creation fails with DataLake	"*Steps to reproduce:*
+
+1. Deploy DLab on Azure with DataLake
+
+*Actual result:*
+
+1.  SSN creation fails
+
+*Expected result:*
+
+1. SSN is created succesful"	DATALAB	In Progress	3	1	6459	2.3_old, AZURE, Debian, DevOps, RedHat
+13385091	[GCP]:Dataproc creation fails on RStudio/Apache Zeppelin	"*Preconditions:*
+ # RStudio/Apache Zeppelin is created on GCP
+
+*Steps to reproduce:*
+ # Create Dataproc on RStudio
+
+*Actual result:*
+ # Dataproc creation fails
+
+*Expected result:*
+ # Dataproc creation is successful
+
+----
+ "	DATALAB	Closed	3	1	6459	Debian, DevOps, GCP, pull-request-available
+13283920	[AWS]: Endpoint_tag is not added to EMR	"*Preconditions:*
+
+1. EMR is created
+
+*Steps to reproduce:*
+
+1. Go to EMR console
+
+*Actual result:*
+
+1. Endpoint_tag is absent
+
+*Expected result:*
+
+1. Endpoint_tag is present
+
+ "	DATALAB	Closed	4	1	6459	AWS, Debian, DevOps, RedHat, pull-request-available
+13416981	Investigate how image adding is implemented and possible future options	"*Answer these questions in DeepLearning content* 
+ # For now is only one image pulled from cloud (AWS/GCP/Azure)?
+ # Why we could not pull all available image list (templates) of related product from service cloud?
+ # Why is current version  of image pulling implemented  from cloud service? ( To add another we should  add it manually)"	DATALAB	Closed	3	3	6459	AWS, AZURE, DevOps, GCP
+13447019	[Endpoint] Edge node termination fails on stage of bucket deletion	"*Preconditions:*
+ # SSN is created on GCP
+ # Endpoint on AWS
+ # Edge node is created on AWS
+
+*Steps to reproduce:*
+ # Terminate edge node
+
+*Actual result:*
+ # Edge node termination fails
+
+*Expected result:*
+ # Edge node is terminated successfully"	DATALAB	Open	4	1	6459	AWS, Debian, DevOps, GCP, RedHat
+13381511	[Azure][GCP]: Endpoint creation fails on command apt-get install -y docker-ce=5:20.10.6~3-0~ubuntu-bionic	"*Preconditions:*
+ # SSN is created
+
+*Steps to reproduce:*
+ # Deploy Endpoint on Azure/GCP via Jenkins Job
+
+*Actual result:*
+ # Endpoint creation fails
+
+{code:java}
+eading state information... E: Version '5:20.10.6~3-0~ubuntu-bionic' for 'docker-ce' was not found --- Logging error --- Traceback (most recent call last): File ""/var/lib/jenkins/workspace/DLAB-Azure-deploy-endpoint/infrastructure-provisioning/terraform/bin/deploy/endpoint_fab.py"", line 235, in ensure_docker_endpoint .format(args.docker_version)) File ""<decorator-gen-4>"", line 2, in sudo File ""/var/lib/jenkins/workspace/DLAB-Azure-deploy-endpoint/venv/lib/python3.7/site-packages/fabric/connection.py"", line 30, in opens return method(self, *args, **kwargs) File ""/var/lib/jenkins/workspace/DLAB-Azure-deploy-endpoint/venv/lib/python3.7/site-packages/fabric/connection.py"", line 716, in sudo return self._sudo(self._remote_runner(), command, **kwargs) File ""/var/lib/jenkins/workspace/DLAB-Azure-deploy-endpoint/venv/lib/python3.7/site-packages/invoke/context.py"", line 212, in _sudo return runner.run(cmd_str, watchers=watchers, **kwargs) File ""/var/lib/jenkins/workspace/DLAB-Azure-deploy-endpoint/venv/lib/python3.7/site-packages/invoke/runners.py"", line 271, in run return self._run_body(command, **kwargs) File ""/var/lib/jenkins/workspace/DLAB-Azure-deploy-endpoint/venv/lib/python3.7/site-packages/invoke/runners.py"", line 404, in _run_body raise UnexpectedExit(result) invoke.exceptions.UnexpectedExit: Encountered a bad command exit code! Command: ""sudo -S -p '[sudo] password: ' apt-get install -y docker-ce=5:20.10.6~3-0~ubuntu-bionic""{code}
+*Expected result:*
+ # Endpoint creation is successfully"	DATALAB	Closed	3	1	6459	AZURE, Debian, DevOps, GCP, RedHat, pull-request-available
+13305242	[Branch-1515][AWS][GCP]: DeepLearning creation fails	"*Preconditions:*
+
+1. SSN is created on AWS/GCP from branch-515
+
+*Steps to reproduce:*
+
+1. Create Deep Learning
+
+*Actual result:*
+
+1. Deep Learning creation fails
+
+*Expected result:*
+
+1. Deep Learning is created successful"	DATALAB	Closed	3	1	6459	AWS, Debian, DevOps, GCP, pull-request-available
+13386751	[TensorFlow with Jupyter] Investigate why Create Models playbook runs with error	"Preparation playbook Create Models run with error. It fails on the first block:
+{code:java}
+ModuleNotFoundError                       Traceback (most recent call last)
+<ipython-input-2-ffde0fe9d8cf> in <module>
+      4 get_ipython().run_line_magic('matplotlib', 'inline')
+      5 import tensorflow as tf
+----> 6 from tf.keras.models import Sequential, load_model
+      7 from keras.layers import Dropout, Flatten, Convolution2D, MaxPooling2D, Dense, Activation
+      8 from keras.optimizers import Adam
+
+ModuleNotFoundError: No module named 'tf'
+{code}"	DATALAB	Open	4	3	6459	Debian, DevOps, GCP, RedHat
+13484275	[Azure]Project termination fails if HDInsight is in Running status	"This bug was found during project termination. I guess it's related to endpoint disconnection as well.
+
+
+*Preconditions:*
+ # HDInsight is in running status
+
+*Steps to reproduce:*
+ # Terminate project
+
+*Actual result:*
+ # Project termination fails
+
+{code:java}
+Removing private subnet
+[Error-2022-10-03 15:26:53]: Failed to remove subnets.. Exception: can only concatenate str (not ""NoneType"") to str
+{'error': '[Error-2022-10-03 15:26:53]: Failed to remove subnets.. Exception: can only concatenate str (not ""NoneType"") to str'}
+Instance gcp-3-10hd-Pr2Term-local-edge has been removed
+Disk gcp-3-10hd-Pr2Term-local-edge-volume-primary has been removed
+Network interface gcp-3-10hd-Pr2Term-local-edge-nif has been removed
+Static IP address gcp-3-10hd-Pr2Term-local-edge-static-ip has been removed
+Instance gcp-3-10hd-Pr2Term-local-nb-rs-pr2 has been removed
+Disk gcp-3-10hd-Pr2Term-local-nb-rs-pr2-volume-primary has been removed
+Disk gcp-3-10hd-Pr2Term-local-nb-rs-pr2_disk2_7bf05048ae574dccb73fb043ba37909d has been removed
+Network interface gcp-3-10hd-Pr2Term-local-nb-rs-pr2-nif has been removed
+Traceback (most recent call last):
+ {code}
+*Expected result:*
+ # Project termination is successful"	DATALAB	Closed	3	1	6459	AZURE, DevOps
+13388368	Do not locate cuda driver DEB package in /home/datalab-user	"If create any Notebook based on GPU (GCP) the cuda driver DEB package is located in / home/datalab-user and visualises in Notebook UI.
+
+So, do not locate cuda driver DEB package in /home/datalab-user."	DATALAB	Closed	4	3	6459	Debian, DevOps, GCP, pull-request-available
+13498402	[AWS][Azure][GCP] Project creation fails due nginx installation error	"*Preconditions:*
+ # SSN is in running status
+
+*Steps to reproduce:*
+ # Create project
+
+*Actual result:*
+ # Project creation fails
+
+{code:java}
+Failed install nginx with ldap: Encountered a bad command exit code! {code}
+Expected result:
+ # Project creation is successful"	DATALAB	In Progress	2	1	6459	AWS, Azure, Debian, DevOps, GCP, pull-request-available
+13318665	If docker runs with '1' the library status is stuck in 'installing' in Web UI	"*Preconditions:*
+ # Notebook is created
+
+*Steps to reproduce:*
+
+1. Install library dyNET (Py3) without version indiction
+
+*Actual result:*
+ # Docker runs with '1'
+ # Library status is still 'installing' in Web UI
+
+*Expected result:*
+ # Docker runs with '1'
+ # Library status is 'failed' in Web UI"	DATALAB	Closed	3	1	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat, pull-request-available
+13258251	[GCP]: Billing issues	"*Preconditions:*
+ # Billing is available on env
+
+*Steps to reproduce:*
+ # Go to detailed billing/billing page
+
+*Actual result:*
+ # Detailed billing are not  rounded 
+ # Values of  'resource type' are absent only for volume of computational resources
+ #  Volume of computational resources are marked as 'shared resource'
+ # Total calculation  does not include rounded values
+
+*Expected result:*
+ # Detailed billing should be rounded to the hundreds
+ #  Values of  'resource type' of computational resources contains 'Volume'
+ #  Volume of computational resources are marked by user who has created it
+ # Total calculation includes rounded values
+
+
+ "	DATALAB	Closed	3	1	7830	Back-end, Debian, GCP, pull-request-available
+13267671	[AWS]: Billing report export fails due to 500 error	"*Preconditions:*
+
+1. Billing is available for AWS
+
+*Steps to reproduce:*
+ # Go to 'Billing report' page
+ #  Click 'Export' button
+
+*Actual result:*
+
+1. Billing export fails
+
+*Expected result:*
+
+1. Billing export is successful
+
+ "	DATALAB	Closed	3	1	7830	AWS, Back-end, Debian, RedHat, pull-request-available
+13298746	[Branch-1571][Billing report]:Grid is broken if cell contains two values in file .csv	"*Preconditions:*
+1. Billing is available for DES
+
+*Steps to reproduce:*
+1. Export billing
+2. Open file
+
+*Actual result:*
+1. Grid is broken
+
+*Expected result:*
+1. Grid is not broken
+
+"	DATALAB	Closed	4	1	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13295985	Changes for group	"# 'View full billing report for all users' option should trigger for all kinds of users: Admin/Super Admin/User
+ # If edge (another cloud) is created after group setting add notebook/compute shapes with the smallest size in the group"	DATALAB	Closed	4	3	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13314493	[Billing]: The amount of slave nodes calculate as 'total_number_nodes-1node(master)'	"Every computational resource has only one master node and the other nodes are slaves.
+
+We allow user to chose different sizes for master and for slave only for EMR and Dataproc. 
+
+User cannot chose different sizes for master and for slave for Spark cluster.
+
+So calculate the amount of salve nodes for 'Billing report' page:
+
+total_number_nodes - one_node
+
+(i) It is wrong calculation if slave amount for EMR and Dataproc (view attachment)."	DATALAB	Closed	4	3	7830	AWS, AZURE, GCP
+13253729	Custom image should be fetched depending on project/endpoints	"*Preconditions:*
+ # User1 is assigned to Project1
+ # User1 is assigned to Project2
+ # Custom image is created from Jupyter1 in Project1
+
+*Steps to reproduce:*
+
+1. Click '+ Create new' button
+
+2. Choose Project2
+
+3. Choose Jupyter notebook template
+
+ 
+
+*Actual result:*
+ # Custom image is from Jupyter1 is available
+
+*Expected result:*
+ # Custom image is from Jupyter1 is not available"	DATALAB	Closed	3	1	7830	AWS, AZURE, Back-end, Debian, RedHat, pull-request-available
+13289236	[Back-end]: Cluster name should be unique per project	"Work in branch ""DLAB-1546"""	DATALAB	Closed	3	3	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13267967	[Back-end][List of Resource]: Switching between project is not available for user (not admin)	"*Preconditions:*
+
+1. User (not admin) is logged in DLab
+
+*Steps to reproduce:*
+
+1. Go to 'List of Resource' page
+
+*Actual result:*
+
+1. 'Select active project' drop down list is absent
+
+*Expected result:*
+ # 'Select active project' drop down list is present
+
+************************************************************************
+
+2.  In 'select active project' should be available for user only assigned his project. However not it is available all project.
+
+FE should use GET /api/project/me"	DATALAB	Closed	3	1	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat, pull-request-available
+13297979	Do not convey to Project_Admin groups of Super_Admin and Project_Admin	"If Super_admin and Project_admin are assigned to one project and project_admin makes change in group where is Super_admin (for example, add user), after that administrative operation for all DLab from Super_admin is removed, but it should be present.
+
+So Project_Admin should not have possibility to alter permissions for Super_Admin and Project_Admin."	DATALAB	Closed	3	3	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13268578	Environment stopping should take into consideration instance status	"# Do not allow to stop environment if project endpoint is not in connected or disconnected statuses.
+ # Do not allow to stop environment if notebook is in creating, starting, creating image, reconfiguring statuses
+ # Do not allow to stop environment  if computational resource is in creating, starting, configuring, reconfiguring statuses."	DATALAB	Closed	4	3	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13287331	[Branch DLAB-1541]: Stoping/starting/terminating statuses of notebook do not convey to DLab UI	"*Preconditions:*
+
+1. Notebook is created from branch DLAB-1541
+
+*Steps to reproduce:*
+
+1. Stop notebook
+
+*Actual result:*
+
+1. Stopping status is absent on DLab UI
+
+*Expected result:*
+
+1. Stopping status is present on DLab UI
+----
+The same case is with starting/terminating statuses of notebook.
+----
+In addition during notebook termination DES does change its status from terminating -> terminated and remained terminating."	DATALAB	Closed	3	1	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13300517	[Back-end]: Support library installation of particular version from DLab UI 	"As user I want to install particular version of library, so that I can easily upgrade or downgrade the library by demand.
+
++How it works now:+
+ # If library is already installed on instance (this library was previous installed during notebook creation) and user installs the same library via DLab UI. And as result DLab shows installing -> installed, but in fact this library is not installed by DLab, Dlab finds that such library is previously installed and changes status installing -> installed. This case is actual when user want to install upper version of library. So make possible to install library like <library_name==version> via DLab UI. For example, this bug was found with library 'request'.
+ # Also if update Python 3 via terminal it shows that it is upgraded but in some minutes it is downgraded again. (It was on Jupyter)
+----
+*How should it work:*
+
+ - If user types wrong library version the output appears where there is a list of versions for this library
+ - If user types right library version this library version should be installed
+ - On top of that what dependencies are added during installation should be conveyed to user (?) {color:#de350b}In what way it should be conveyed?{color}
+ - The latest installed library should be in the top of the libraries grid."	DATALAB	Closed	3	4	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat, pull-request-available
+13268651	[Data Engine]:  Abbreviation for slave and master should not be in billing report	"*Preconditions:*
+ # Data Engine is created on GPU instance
+ # Billing is available for Data Engine
+
+*Steps to reproduce:*
+ # Go to 'Billing report' page
+ # Look at data for Data Engine
+
+*Actual result:*
+
+1.  Project value is absent
+
+2. Resource type is absent
+
+3. 's1', 'm' are present in 'environment name'
+
+*Expected result:*
+
+1.  Project value is present
+
+2. Resource type is present
+
+3. 's1', 'm' are absent in 'environment name'
+
+ "	DATALAB	Closed	4	1	7830	2.3_old, Back-end, Debian, GCP
+13274952	Add logs into integration tests	Provide logs for slf4j.	DATALAB	Closed	3	3	7830	AWS, AZURE, Back-end, GCP
+13287689	[Back-end]: Available lib list is not get due to request entity too large	"*Preconditions:*
+ # SSN is created on GCP
+ # Endpoint is created on AWS
+ # Notebook is created on AWS
+
+*Steps to reproduce:*
+
+1.  Go to 'List of resource' page
+
+2.  Click action menu for notebook
+
+3. Choose manage libraries
+
+4. Choose 'Select resource' in drop down list 
+
+*Actual result:*
+
+1. Available lib list is not get successful
+
+*Expected result:*
+
+1. Available lib list is get successful
+----
+Available lib list was get successful after 40 minutes of trying.
+
+This bug reproduces especially for RStudio"	DATALAB	Closed	3	1	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13269040	[Azure]: Billing data is not available after calendar filter using	"*Preconditions:*
+
+1. Billing is available
+
+*Steps to reproduce:*
+
+1.  Go to 'Billing report'
+
+2. Click calendar
+
+3. Click 'Last Month'
+
+4. Click 'This year'
+
+*Actual result:*
+
+1. Billing data is not available for this year
+
+*Expected result:*
+
+1. Billing data is not available for this year"	DATALAB	Closed	4	1	7830	2.3_old, AZURE, Back-end, Debian, Known_issues(release2.2), RedHat
+13296085	Data storage on SSN	If endpoint is disconnected related instances disappear in billing report but is still available in 'list of resource' page.	DATALAB	Closed	3	3	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13294966	Edge node stopping should not stop the other notebooks of different edges in one project	"*Preconditions:*
+1. SSN is created on GCP
+2. Project is created more then one edge nodes (Remote AWS/Azure/GCP endpoints)
+3. Every edge has notebook in running status
+
+*Steps to reproduce:*
+1. Stope one edge node
+
+*Actual result:*
+1. Only one edge node is stopped
+2. All three notebooks are stopped in different edges within one project
+
+*Expected result:*
+1. Only one edge node is stopped
+2. Only notebook is stopped, which edge has been stopped
+"	DATALAB	Closed	3	1	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13323372	Do not show library with status 'invalid name' for notebook which is created from custom image	Do not show library with status 'invalid name' for notebook which has been created from custom image and this previous notebook contained library with status 'invalid name'.	DATALAB	Closed	4	3	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13298372	[Branch-1571]: Administrative permissions disappear after disconnect the last endpoint	"*Preconditions:*
+1. Environment is created on local endpoint
+
+*Steps to reproduce:*
+1. Disconnect the last endpoint
+
+*Actual result:*
+1. Environment is terminated on local endpoint
+2. Administrative permissions disappear
+
+*Expected result:*
+1. Environment is terminated on local endpoint
+2. Administrative permissions  do not disappear"	DATALAB	Closed	3	1	7830	AWS, AZURE, Back-end, Debian, GCP, Known_issues(release2.3), RedHat
+13313596	Folder creation (via bucket browser) is not shown in Audit	"*Preconditions:*
+
+1. Bucket browser popup is opened
+
+*Steps to reproduce:*
+ # Create empty folder via bucket browser
+ # Go to Audit page
+
+*Actual result:*
+
+1. Folder creation is not shown in Audit
+
+*Expected result:*
+
+Folder creation is shown in Audit"	DATALAB	Closed	4	1	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13210918	[Manage libraries]: Adjust error message for Java dependencies	"*Preconditions:*
+
+ 1. Environment is created
+
+2. 'Manage libraries' popup is open
+
+ 
+
+*Steps to reproduce:*
+
+ 1. Choose 'java' package
+
+2.  Put wrong library format in text box: ch.exense. <step:selenium-plugin-DEf::3.8.0>
+
+3. Put library which is not available: <ch.exense.step:selenium-plugin-def:3.3.0>
+
+ 
+
+*Actual resul*t:
+
+1. *query param artifact Wrong library name format. Should be <groupId>:<artifactId>:<versionId>. E.g. io.dropwizard:dropwizard-core:1.3.5*
+
+2. *Artifact with id=selenium-plugin-DEf, groupId=ch.exense.step and version 3.8.0 not found""*
+
+ 
+
+ 
+
+ 
+
+*Expected result:*
+ # *Wrong library name format. Should be <groupId>:<artifactId>:<versionId>*
+ # *No matches found*"	DATALAB	Closed	4	1	7830	AWS, AZURE, Debian, DevOps, GCP, RedHat
+13259617	[Back-end]:Change values for 'Endpoint status'	"# Change values for 'Endpoint status'
+
+creating - connecting
+starting - connecting
+ running - connected
+ stopping - disconnecting
+ stopped - disconnected
+ terminated - terminated
+ terminating - terminating"	DATALAB	Closed	3	3	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat, pull-request-available
+13302865	[Back-end]: Set of improvements for bucket browser	"# (/) Add possibility to delete folder.
+ # -Convey confirmation message for object deletion. Convey grid of folders and objects which will be deleted. Add: 'All affected objects will be deleted. Do you want to proceed?' and add 'No', 'Yes' buttons.  The header of confirmation message 'Delete object(s)'. If user does not delete any folder convey error message 'These objects will be deleted. Do you want to proceed?'-
+ # -Add confirmation message if upload the file with exciting name like it is on GCP-
+ # (/) Multiple support for upload
+ # (/) Multiple support for deletion
+ # -Multiple support for download-
+ # -{color:#172b4d}Make breadcrumb clickable{color}-
+ # (/) 'Download'/'Delete' buttons should be white and should be disabled and if user selects files the buttons should be enabled. Move these buttons on the top of popup and on the bottom leave 'Close' button.
+ # (/) The previous uploading process should not disappear if user upload another object or does not cancel and only closes the window or goes to another folder.
+ # -Add filter by name-"	DATALAB	Closed	3	4	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13298222	[Back-end]: Implement audit by DLab level	"As user I want to see history changes, so that I can easily find out what/when/who has made changes.
+
+Possibility to find out:
+ * Who has deleted or added user?
+ * Who has created notebook/compute? 
+ * Who has stopped/started/terminated notebook/compute/project?
+ * Who has edited group/project/notebook/compute?
+ * Who has gone to links?
+ * When changes have been made
+ * What changes have been made?
+
+In general everything that has been done via DLab UI should be in history of changes.
+
+History by changes should be in the following consistency:
+
+user → time→ action.
+
+This functionality should be conveyed to a new tab 'Audit'.
+
+{color:#de350b}Add bell/information icon, where user can view history changes in 'list of resource' page.{color}"	DATALAB	Closed	3	2	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13281170	[AWS]: Investigate why web terminal is opened not always successfully	"*Preconditions:*
+ 1. Notebook is in running status in AWS
+ 2. User is located on 'Resources list' page
+
+*Steps to reproduce:*
+ 1. Click action menu for notebook
+ 2. Chose 'Open terminal'
+
+*Actual result:*
+ 1. Web terminal is not opened successfully 
+ Error 401 for tunnel connection
+
+*Expected result:*
+ Web terminal is opened successfully without error 
+----
+The frequency of reproducing this bug is approximately once from five attempts."	DATALAB	Closed	4	3	7830	AWS, Back-end, Debian, RedHat
+13268626	[Scheduler by time]: Starting is not triggered only for spark cluster	"*Preconditions:*
+
+1. Spark cluster is stopped on running notebook
+
+*Steps to reproduce:*
+
+1. Set scheduler for starting spark cluster by time
+
+*Actual result:*
+
+1. Spark cluster is started
+
+*Expected result:*
+
+1. Spark cluster is not started"	DATALAB	Closed	4	1	7830	AWS, AZURE, Back-end, Debian, GCP, Known_issues(release2.2), RedHat
+13313578	[Scheduler]: Stopping notebook does not trigger	"*Preconditions:*
+
+1. Notebook is in running status
+
+*Steps to reproduce:*
+ # Set up scheduler (vies attachment 'Set up')
+ # Click on 'Save' button
+
+*Actual result:*
+
+1. The error message appears: 'Failed to parse string as a date'
+
+*Expected result:*
+
+1. There is not any error message
+
+ "	DATALAB	Closed	3	1	7830	AWS, AZURE, Debian, GCP, RedHat
+13305858	Group uploading should not impact on bucket browser performance	If objects are in uploading and in waiting for upload it is hard to open bucket browser - preloader is too long. (I have uploaded 12 objects, each object has 162 MB)	DATALAB	Closed	3	3	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13271252	[Billing page]: Data engine is marked as shared resource	"*Preconditions:*
+
+1. Billing is available for spark clustaer
+
+*Steps to reproduce:*
+
+1. Go to 'Billing report' page
+
+*Actual result:*
+
+Data Engine is marked as shared resource
+
+*Expected result:*
+
+Data Engine is marked as user's resource
+
+ "	DATALAB	Closed	4	3	7830	2.3_old, AWS, Back-end, Debian, RedHat
+13304683	[AWS]: Object upload fails due to lack of java memory	"*Preconditions:*
+
+1. Environment is created
+
+*Steps to reproduce:*
+
+1. Upload more than 500MB (it was uploaded file.zip)
+
+*Actual result:*
+
+1. Upload fails
+
+*Expected result:*
+
+1. Upload is successful"	DATALAB	Closed	3	1	7830	AWS, Back-end, Debian, RedHat
+13274951	Setup time out for http client	Timeout should be on property file.	DATALAB	Closed	3	3	7830	AWS, AZURE, Back-end, GCP
+13267946	Failed to manage git credentials	"*Preconditions:*
+ # Notebook Is created
+ # 
+h4. Git Credentials is added
+
+*Steps to reproduce:*
+ # Go to ungit notebook link
+ # Clone repository
+
+*Actual result:*
+ # Clone/push/ commands are forbidden
+
+*Expected result:*
+ # Clone/push/ commands are allowed
+
+ 
+
+ "	DATALAB	Closed	3	1	7830	AWS, AZURE, Debian, DevOps, GCP, RedHat, pull-request-available
+13254391	[EQF]:Stop project simultaneously should affect related instances	"*Preconditions:*
+
+Environment is created
+
+Steps to reproduce:
+ # Go to 'Manage environment' popup
+ # Click stop project
+
+*Actual result:*
+ # Any instance is  not stopped
+ # Related instances are in running status
+
+*Expected result*
+ # Edge is stopped
+ # Related instances are stopped
+
+*Notes:*
+ * Stop project should take into consideration instances in 'creating/configuring/starting/reconfiguring/Creating Image/' statuses. If any instance is in these statuses do not allowed admin to stop/terminate project.
+ In this case convey error message: ""Can not stop environment because on of user resource is in status CREATING or STARTING""
+ * If at least one instance is in running status and edge is stopped and the other instances as well - allow admin to stop project
+
+ "	DATALAB	Closed	3	1	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat, pull-request-available
+13282570	Augment the project page	"# Stop edge node action should stop all its resources as well. It should be the same functionality as it was in 'Manage environment' popup
+
+Do not forget that stopping edge node depends on instance statuses."	DATALAB	Closed	4	3	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat, pull-request-available
+13303552	Performance for uploading should be better	"# Uploading performance (I've checked only on AWS and GCP) [~ofuks] look at performance on GCP/AWS:
+
+ 
+
+(i) *Uploading performance*
+
++AWS (30/04/2020)+
+||Size||AWS||Bucket browser||
+|51MB|1:35|3:15|
+|51MB|1:41|0:28|
+|51MB|0:33|0:25|
+|51MB|0:40|0:22|
+||Size||AWS||Bucket browser||
+|97.2MB|0:49|0:44|
+|97.2MB|1:08|0:39|
+|97.2MB|1:14|0:50|
+|97.2MB|0:53|0:32|
+||Size||AWS||Bucket browser||
+|8.6MB|0:16|0:16|
+|8.6MB|0:17|0:05|
+|8.6MB|0:17|0:05|
+|8.6MB|0:17|0:04|
+
++Via VPN+
+||Size||AWS||Bucket browser||
+|8.6MB|0:16|0:25|
+|8.6MB|4:13|0:29|
+|8.6MB|0:34|0:30|
+|8.6MB|0:32|0:38|
+
++AWS (04/05/2020)+
+||Size||AWS||Bucket browser||
+|51MB|1:02|1:38|
+|51MB|0:32|0:28|
+|51MB|0:42|0:23|
+|51MB|0:28|0:21|
+||Size||AWS||Bucket browser||
+|97.2MB|1:20|0:34|
+|97.2MB|2:44|0:36|
+|97.2MB|1:21|3:25|
+|97.2MB|0:56|0:43|
+----
+*Ticket verifying:*
+ AWS (13/05/2020)
+||Size||AWS||Bucket browser||
+|51MB|0:29|0:16|
+|51MB|0:18|0:13|
+|51MB|0:44|0:12|
+|51MB|0:34|0:12|
+||Size||AWS||Bucket browser||
+|97.2MB|1:22|0:26|
+|97.2MB|2:35|0:26|
+|97.2MB|0:27|1:58|
+|97.2MB|0:46|0:31|
+
+ 
+----
++GCP+ (30/04/2020)
+||Size||GCP||Bucket browser||
+|51MB|0:18|1:21|
+|51MB|0:12|1:50|
+|51MB|0:14|2:20|
+|51MB|0:35|2:52|
+||Size||GCP||Bucket browser||
+|97.2MB|0:47|3:13|
+|97.2MB|0:58|more than 8:00|
+|97.2MB| | |
+|97.2MB| | |
+||Size||GCP||Bucket browser||
+|8.6MB|0:03|0:04|
+|8.6MB|0:03|0:03|
+|8.6MB|0:03|0:04|
+|8.6MB|0:03|0:08|
+
++Via VPN+
+||Size||GCP||Bucket browser||
+|8.6MB|0:05|0:08|
+|8.6MB|0:04|0:08|
+|8.6MB|0:06|0:17|
+|8.6MB|0:04|0:05|
+
++GCP (04/05/2020)+
+||Size||GCP||Bucket browser||
+|51MB|0:21|0:19|
+|51MB|0:16|0:22|
+|51MB|0:15|0:16|
+|51MB|0:17|0:19|
+||Size||GCP||Bucket browser||
+|97.2MB|0:25|1:21|
+|97.2MB|0:29|1:19|
+|97.2MB|0:37|1:21|
+|97.2MB|0:30|0:42|
+----
+Ticket verifying
+
++GCP+ (13/05/2020)
+||Size||GCP||Bucket browser||
+|51MB|0:12|0:17|
+|51MB|0:14|0:16|
+|51MB|0:14|0:16|
+|51MB|0:14|0:15|
+||Size||GCP||Bucket browser||
+|97.2MB|0:22|0:23|
+|97.2MB|0:18|0:23|
+|97.2MB| 0:20| 0:25|
+|97.2MB| 0:22| 0:26|
+||Size||GCP||Bucket browser||
+|543MB|2:03|1:26|
+|543MB|2:02|1:32|"	DATALAB	Closed	3	3	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13260288	[Azure]: Billing is not available	"*Preconditions:*
+ # Env is created
+ # Billing is available in Azure console
+
+*Steps to reproduce:*
+ # Go to billing page
+
+*Actual result:*
+
+1. Billing is not available in DLab
+
+*Expected result:*
+
+1. Billing is  available in DLab
+
+ "	DATALAB	Closed	3	1	7830	AZURE, Back-end, Debian, RedHat, pull-request-available
+13308731	Shapes for computational resources are absent	"*Preconditions:*
+
+1. Notebook is in running status
+
+*Steps to reproduce:*
+ # Go to 'List of resource' page
+ # Click 'gear' icon
+ # Choose add compute
+
+*Actual result:*
+
+1. Shapes for computational resources are absent
+
+*Expected result:*
+
+1. Shapes for computational resources are present
+
+ "	DATALAB	Closed	3	1	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13296080	[Branch-1571]: Functionality of exceeding project/total quotas does not trigger	"*Preconditions:*
+ # Quotas (total/project) is exceeded 
+
+*Steps to reproduce:*
+ # Create resources
+ # Start resources
+
+*Actual result:*
+ # It is allowed to create notebook/compute/project
+ # It is allowed to start notebook/compute/edge node
+ # Running resources is still raining
+
+*Expected result:*
+ # It is not allowed to create notebook/compute/project
+ # It is not allowed to start notebook/compute/edge node
+ # Running resources is stopped/terminated (Data Engine Service)"	DATALAB	Closed	3	1	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13328509	Replace old name by new one in all documentations	"A new name has been approved 'Apache DataLab'.
+
+So we should change from 'Apache DLab' to 'Apache DataLab'."	DATALAB	Closed	3	3	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13270977	If custom image contains dependency Notebook creation fails	"*Preconditions:*
+ # Library is installed on Notebook1 via DLab UI
+ # Create custom image from Notebook1
+
+*Steps to reproduce:*
+ # Go to 'Resource list' page
+ # Create Notebook2 from custom image 
+
+*Actual result:*
+ # Notebook is not created
+ # Appears error message
+
+*Expected result:*
+ # Notebook is created
+ # There is not error message"	DATALAB	Closed	3	1	7830	AWS, AZURE, Back-end, Debian, RedHat
+13279361	Endpoint url should be unique	"1. Make Endpoint url unique per DLab.
+
+If such endpoint is already added convey error message :
+
+""Endpoint url with this address already exists in system""
+
+2.  Endpoint name and endpoint url should be case insensitive.
+
+3. Change error message for name 'Endpoint with passed name already exist in system' -> 'Endpoint with this name already exists in system'"	DATALAB	Closed	4	3	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat, pull-request-available
+13282406	Status instance should be not in progress in case of failing to open result.json	"The bug reproduces if terminate project via 'Manage environment' popup. 
+
+In case of termination project fails the status notebook is still 'terminating'."	DATALAB	Closed	4	3	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13269047	[Azure]: Detailed billing is not available	"*Preconditions:*
+
+1. Billing is available for notebook on 'Billing report' page
+
+*Steps to reproduce:*
+
+1. Go to 'List of resource' page
+
+*Actual result:*
+
+1. Detailed billing is absent
+
+*Expected result:*
+
+1. Detailed billing is present"	DATALAB	Closed	3	1	7830	AZURE, Debian, Known_issues(release2.2), RedHat
+13320409	[Back-end]: Add information if autocomplete does not work	"# If autocomplete does not work show information:
+
+'Autocomplete is currently unavailable for <name_group> group'."	DATALAB	Closed	3	3	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13265527	[Azure][Back-end]: Reconfiguration spark on Notebook fails	"*Preconditions:*
+
+1. Notebook is created
+
+*Steps to reproduce:*
+
+1. Reconfigure Spark on Notebook
+
+*Actual result:*
+
+1. Notebook reconfiguration fails
+
+*Expected result:*
+
+1. Notebook reconfiguration is successful
+
+ 
+
+For BE: Add parameter  endpoint_name for Notebook reconfiguration"	DATALAB	Closed	3	1	7830	AZURE, Back-end, Debian, RedHat, pull-request-available
+13271255	[back-end]: Get rid of necessary log in RStudio/Rstudio with TensorFlow	"In the scope of SSO implementation (https://issues.apache.org/jira/browse/DLAB-1105).
+In order to rid of necessary log in RStudio	some changes should be made:
+etc/systemd/system/rstudio-server.service
+[Service]
+Environment=USER=dlab-user
+ExecStart=/bin/bash -c ""export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/cudnn/lib64:/usr/local/cuda/lib64; /usr/lib/rstudio-server/bin/rserver --auth-none 1"""	DATALAB	Closed	3	1	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat, pull-request-available
+13282437	[List of resources]: Endpoint disconnection should not cause disappearing previously available instance	"*Preconditions:*
+ # SSN is created in AWS
+ # External endpoint is created on GCP
+ # One project is created for two clouds
+ # notebooks are created for each cloud
+
+*Steps to reproduce:*
+ # Go to 'Mange environment' popup
+ # Click 'Endpoints' button
+ # Click disconnect external endpoint with resources termination
+ # Go to list of resource
+
+*Actual result:*
+
+1. Any notebooks are not available in list of resource
+
+*Expected result:*
+
+1. All notebooks are not available in list of resource
+
+ "	DATALAB	Closed	3	1	7830	AWS, Azure, Back-end, Debian, GCP, RedHat
+13311746	Empty folder is not created in cloud via bucket browser	"*Preconditions:*
+
+1. Project is created
+
+*Steps to reproduce:*
+
+1. Create folder via bucket browser
+
+*Actual result:*
+
+1. Empty folder is not created on cloud
+
+*Expected result:*
+ # Empty folder is created on cloud
+
+Merge fix into develop and epm-v2.3.0 branches."	DATALAB	Closed	3	1	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13252672	Pass user/project/endpoint/custom tags to FE on 'Billing Report' page	As a user I want to see all types of tags on 'Billing report' page so that I can swiftly determine the descriptions which are associated with tags.	DATALAB	Closed	3	3	7830	AWS, AZURE, Ba, Debian, RedHat, pull-request-available
+13228552	[Scheduler]: Change error message for Data Engine Service termination	In case if neither terminate date nor terminate time are not chosen and user hits 'Save' butt change error message  from 'The request body Start days or stop days should be filled for scheduler' to 'The request body Terminate days and Terminate times should be filled for scheduler'	DATALAB	Closed	4	3	7830	Back-end, Debian, GCP, RedHat
+13254732	[Scheduler on idle]: Does not trigger by inactivity for Spark Standalone cluster	"*Preconditions:*
+
+1. Spark cluster is in running status
+
+*Steps to reproduce:*
+
+1. Actual inactivity time is more than  inactivity time for Spark in scheduler
+
+*Actual result:*
+
+Spark standalone is rinning
+
+*Expected result:*
+
+1. Spark standalone is stopped"	DATALAB	Closed	3	1	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat, pull-request-available
+13284767	[Back-end]: Add possibility to recreate edge node after edge termination/failing	"As user I want to use my instances in case if edge failing or again to create previously terminated edge in the same project using the same endpoint so that it allows me do not create project with new name and use the previous name.
+
+If we terminate edge (or edge has been failed) we could not create the new edge in the same project and the same endpoint.
+
+Github issue: [https://github.com/apache/incubator-dlab/issues/731].
+
+ "	DATALAB	Closed	3	4	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13283463	[Connect endpoint]: Add validation for empty field 	"If endpoint name or url are empty and user sens regrets convey error message
+ * 'Endpoint name field cannot be empty' 
+ * 'Endpoint url field cannot be empty' "	DATALAB	Closed	4	3	7830	AWS, AZURE, Back-end, Debian, DevOps, GCP, RedHat, pull-request-available
+13268566	Environment management fails if manage computational resource of another user	"*Preconditions:*
+
+1. Computational resource is created by user1
+
+*Steps to reproduce:*
+ # User1 is not logged in Dlab
+ # Login by user2
+ # Go to 'environment management' page
+ # Click stop or terminate icon for computational resource of users1
+
+*Actual result:*
+
+1. It is not allowed to terminate computational resource
+
+*Expected result:*
+
+1. Computational resource is terminated"	DATALAB	Closed	3	1	7830	AWS, AZURE, Back-end, Debian, GCP, Known_issues(release2.2), RedHat
+13298743	[Branch-1571][Billing report]:Get rid of user column if user views only own resources	If user is allowed only to view his own report, please remove user column form file.csv after billing export.	DATALAB	Closed	4	3	7830	AWS, AZURE, Debian, GCP, RedHat
+13268843	Can not get token if stop the whole project or stop/terminate notebook of another user	"*Preconditions:*
+ # Resources  are created by user2 in Project1
+ # User 2 is logged out
+ # User1 has administrative role
+
+*Steps to reproduce:*
+ # Login by user1
+ # Go to 'environment management' page
+ # Click stop or terminate notebook of user2
+
+*Actual result:*
+ # It is not allowed to stop or terminate notebook
+ # Error message appears 'Can not get token '
+
+*Expected result:*
+ # It is allowed to stop or terminate notebook
+ # Error message is absent
+
+The same error appears if stop project which contains notebook of another user"	DATALAB	Closed	3	1	7830	AWS, AZURE, Back-end, Debian, GCP, Known_issues(release2.2), RedHat, pull-request-available
+13295725	[Azure][Back-end]: Custom image creation fails	"*Preconditions:*
+ 1. Notebook is created on remote Azure endpoint
+
+*Steps to reproduce:*
+ 1. Create custom image
+
+*Actual result:*
+ 1. Custom image creation fails
+
+*Expected result:*
+ 1. Custom image creation is successful
+
+This bug is reproduced when project is created with 'use shared image' enable or disabled
+
+"	DATALAB	Closed	4	1	7830	AZURE, Back-end, Debian, RedHat
+13264993	[Azure][Back-end]: Configuration and reconfiguration spark on Data Engine fails	"*Preconditions:*
+
+1. Notebook is created
+
+*Steps to reproduce:*
+
+1. Create custom Data Engine
+
+*Actual result:*
+
+1. Data Engine creation fails
+
+*Expected result:*
+
+1. Data Engine creation is successful
+
+ 
+
+Also Data Engine reconfiguration fails 
+
+ 
+
+For BE: Add parameter  endpoint_name for Data Engine reconfiguration"	DATALAB	Closed	3	1	7830	AZURE, Back-end, Debian, RedHat, pull-request-available
+13256336	Avert a notebook creation for users who are in a deleted group	"*Preconditions:*
+ 1. User1 is in Group1
+ 2. Group1 is assigned to a Project1
+
+*Steps to reproduce:*
+ 1. Delete Group1 on 'Roles' page
+
+*Actual result:*
+ 1. User1 is still allowed to create notebook in Project1
+
+*Expected result:*
+ 1. User1 is not allowed to create notebook in Project1
+
+ 
+
+*NOTE:*
+
+This case reproduces only for group which are in LDAP group or for <$anyuser>.
+
+So if admin deletes a group which are assigned to a project an error message should appear:
+
+'Group can not be removed because it is used in some project'. An error message should not appear for a group which is assigned to a  project which is in deleted/deleting statuses"	DATALAB	Closed	3	3	7830	AWS, pull-request-available
+13286277	Actions for notebook in case if endpoint is disconnected	"If endpoint is disconnected should we fail all action with notebook?
+
+*Case:*
+ # Notebook is running
+ # endpoint is disconnected
+
+*Steps:*
+ # Stop notebook
+
+*Actual result:*
+ # Notebook is failed on DLab UI
+ # Notebook is running on cloud console
+ # Docker for stop is not run"	DATALAB	Closed	3	3	7830	AWS, Azure, Back-end, Debian, GCP, RedHat
+13257084	[Back-end]: Add 'Test' button to endpoints	As an admin I want to check if it is connection to endpoint so that I can be convinced that endpoint instance is correct and works.	DATALAB	Closed	3	4	7830	2.3_old, AWS, AZURE, Back-end, Debian, GCP, RedHat
+13281898	Job should check also inactive endpoint status	"Now we have job which checks endpoint active status. However if endpoint changes its status <Active> -> <Inactive> the job will not  more check the status.
+
+But the job should also check  inactive endpoint status."	DATALAB	Closed	3	3	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13258535	[EQF]: 400 error for java dependency (library instalation)	"*Preconditions:*
+
+1. Notebook or cluster is in running status
+
+*Steps to reproduce:*
+
+1. Install any library for notebook/cluster from java group
+
+*Actual result:*
+
+1. Library is not installed installed. 400 error after typing library name
+
+*Expected result:*
+
+1. Library is installed"	DATALAB	Closed	4	1	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat, pull-request-available
+13298249	[Branch-1571][Azure]: Set of issues on remote endpoint	"*Preconditions:*
+ 1. Billing is available for remote endpoint on Azure
+
+*Steps to reproduce:*
+ 1. Go to billing report page
+
+*Actual result:*
+ 1. -Status for computational resource is absent-
+ -2. Values for edge are absent except for 'Product' column-
+ 3. -All values for shared image per all cloud are absent except for 'Product' column-
+ 4. -User 'value' is absent for custom image-
+
+*Expected result:*
+ 1. Status for computational resource is present
+ 2. Values for edge are present 
+ 3. All values for shared image per all cloud are present
+ 4. User 'value' is present for custom image
+----
+Should we convey 'Shared resource' in 'user' column for image which is shared only per project?"	DATALAB	Closed	3	1	7830	AZURE, Back-end, Debian, RedHat
+13271055	[Billing][GCP]: SSN type is not pulled from GCP	"*Preconditions:*
+
+1. Billing is available for DLab
+
+*Steps to reproduce:*
+
+1. Go to 'Billing page'
+
+*Actual result:*
+
+1. SSN type is t2.medium
+
+Expected result:
+
+1. SSN type is n1-standard-2"	DATALAB	Closed	4	1	7830	2.3_old, Back-end, Debian, GCP
+13282951	Investigate why some templates disappear after endpoint/SSN stopping only for remote GCP endpoint	"*Preconditions:*
+ # SSN is created on AWS
+ # Externel endpoint is created on GCP
+ # One project has edge node on AWS (Local) the other edge on GCP (external endpoint)
+ # All instances including SSN are stopped
+
+*Steps to reproduces:*
+ # Start SSN
+ # Start endpoint
+ # Change status endpoint in Mongo
+ # Start edge node
+ # Look available template for external endpoint on GCP
+
+*Actual result:*
+ # Jupyter is available
+ # RStuduo is available
+ # Deeplearning is available
+ # Zeppelin is not available
+ # Superset is not available
+ # JupyterLab is not available
+ # Jupyter with TensorFlow is not available
+
+*Expected result:*
+ # Jupyter is available
+ # RStuduo is available
+ # Deeplearning is available
+ # Zeppelin is available
+ # Superset is available
+ # JupyterLab is available
+ # Jupyter with TensorFlow is  available
+
+ "	DATALAB	Closed	3	3	7830	AWS, Back-end, Debian, GCP, RedHat
+13299894	[Back-end]: Convey Notebook links of other users to administrator	"As an admin I want to see user notebook links, so that I can easily go to users Notebook by demand.
+----
+Notebook links are portrayed only for own resources. Administrator does not know the Notebook link of other user.
+
+So convey notebook links to administrator in 'Environment management' page:
+ # Administrator can view  links of another user
+ # User is not able to view links of the other user
+
+Github issue: [https://github.com/apache/incubator-dlab/issues/729]"	DATALAB	Closed	4	4	7830	AWS, AZURE, Back-end, Debian, GCP, Github_issue, RedHat, pull-request-available
+13254677	[Back-end]: Add possibility to generate key pairs during project creation	"As an admin I want to have possibility to generate a pair of key during project creation, so that I should not create key pair by myself beforehand.
+
+1.  key.pub is put on instances (project/notebook/cluster)
+
+2. key.pem is offered to save in PC
+
+ "	DATALAB	Closed	3	3	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat, pull-request-available
+13323702	Get rid of r package for DeepLearning/TensorFlow with Jupyter	"R package should not be available for:
+ * Deeplearning 
+ * Jupyter with TensorFlow"	DATALAB	Closed	4	3	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13282645	Investigate why DLab instance status are not synced up with cloud status	"If change instance status from cloud console the Dlab instance status is not updated:
+ # Edge node
+ # Notebook
+ # Cluster (master)
+
+Please investigate the reason of that."	DATALAB	Closed	3	3	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13333935	[Back-end]: Minor issues connected with localization	"*Preconditions:*
+ 1. Billing is available on DataLab Web UI
+
+*Steps to reproduce:*
+ 1. Go to 'Billing report' page
+
+2. Click 'Export' button
+
+*Actual result:*
+ 1. Available reporting period is  not localized according to your browser setting
+
+2. Currency symbol is is localized according to your browser setting
+
+*Expected result:*
+
+1. Available reporting period is localized according to your browser setting
+
+2. Currency symbol is is not localized according to your browser setting. Instead of 'USD' should be '$' (before/after sum. it depends on your browser language)
+
+ "	DATALAB	Closed	4	1	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
+13260528	[Billing]: Some values are absent for edge	"*Preconditions:*
+1. Billing is available in DLab
+
+*Steps to reproduce:*
+1. Go to billing report page
+
+*Actual result:*
+1. Resource type and status are absent for edge
+
+Expected result:
+1. Resource type and status are present for edge
+"	DATALAB	In Progress	4	1	7830	AWS, AZURE, Debian, GCP, RedHat, pull-request-available
+13269041	[Azure]: Total sum/resource type is absent in exporting file	"*Preconditions:*
+ # Billing is available
+
+*Steps to reproduce:*
+ # Go to 'Billing report page'
+ # Click 'Export' button
+ # Open exporting file
+
+*Actual result:*
+
+1. Total sum is absent in exporting file
+
+*Expected result:*
+
+1. Total sum is present in exporting file
+-----
+Resource type is absent as well
+ "	DATALAB	Open	5	1	7830	2.3_old, AZURE, Debian, RedHat
+13260888	[Endpoint status]: Info message should be consistent	"Change messages:
+ # from 'Processing! Endpoint start is in progress' to 'Processing! Endpoint connect is in progress'
+ # from 'Processing! Endpoint stop is in progress' to 'Processing! Endpoint disconnect is in progress'"	DATALAB	Closed	4	3	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat, pull-request-available
+13308974	[Azure]: It is impossible to create data engine	"*Preconditions:*
+
+1. Any notebook is created on Azure
+
+*Steps to reproduce:*
+ # Go to 'List of resource' page
+ # click gear action
+ # Choose 'Add compute'
+ # Fill fields
+ # Click 'Create' button
+
+*Actual result:*
+
+1. Data Engine is in creating status
+
+*Expected result:*
+
+1. It is forbidden to create Data Engine"	DATALAB	Closed	3	1	7830	AZURE, Back-end, Debian, RedHat
+13284578	[Billing report]: The same project should not be portrayed as two projects if contains upper case	"If project name contains upper case in billing report page appears two different projects (see attachment)
+
+It should be fixed in develop and internal release branch."	DATALAB	Closed	3	3	7830	Back-end, Debian, GCP, RedHat
+13314423	[AWS]: Billing is not available	"*Preconditions:*
+ # Resources are created on local endpoint
+ # Billing is present in csv file
+
+*Steps to reproduce:*
+
+1. Go to billing report page or to detailed billing
+
+*Actual result:*
+
+1. Billing is not available in DLab Web UI
+
+*Expected result:*
+
+1. Billing is available in DLab Web UI
+
+ "	DATALAB	Closed	3	1	7830	AWS, Back-end, Debian, RedHat
+13302005	Bucket browser permission does not trigger as it is selected	"*Preconditions:*
+ # User1 is not allowed to delete object from bucket
+ # The other permission are allowed for bucket
+
+*Steps to reproduce:*
+
+1.  Go to ** bucket browser
+
+2. Select the object
+
+*Actual result:*
+
+1. User is allowed to delete the object
+
+*Expected result:*
+ # User is not allowed to delete the object
+
+This bug is reproduced with any point (Not only delete bucket) for bucket permission.
+
+ "	DATALAB	Closed	3	1	7830	AWS, AZURE, Back-end, Debian, GCP, RedHat
