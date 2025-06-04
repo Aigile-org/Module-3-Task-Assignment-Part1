@@ -4,9 +4,9 @@ collection_issues = 'issues'
 collection_users = 'users'
 collection_projects = 'projects'
 data_out_folder = r"C:\Users\hp\Desktop\Module-3-Task-assigning\data\data_output"
+trainable_data_folder = r"C:\Users\hp\Desktop\Module-3-Task-assigning\data\data_output\step3_2_processed_data"
 min_assignees = 5
 min_issues_per_assignee = 80
-
 # Parameters for running the pipeline
 num_assignees = 5
 all_assignees = [5, 10, 15, 20]
