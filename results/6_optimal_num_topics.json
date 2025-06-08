@@ -1,0 +1,62 @@
+{
+    "AMBARI_5_assignees": {
+        "optimal_topics": 50,
+        "accuracy": 0.4875
+    },
+    "ARROW_5_assignees": {
+        "optimal_topics": 60,
+        "accuracy": 0.325
+    },
+    "CASSANDRA_5_assignees": {
+        "optimal_topics": 18,
+        "accuracy": 0.55
+    },
+    "CB_5_assignees": {
+        "optimal_topics": 12,
+        "accuracy": 0.3625
+    },
+    "DATALAB_5_assignees": {
+        "optimal_topics": 130,
+        "accuracy": 0.425
+    },
+    "FLINK_5_assignees": {
+        "optimal_topics": 12,
+        "accuracy": 0.3625
+    },
+    "FLINK_10_assignees": {
+        "optimal_topics": 160,
+        "accuracy": 0.275
+    },
+    "FLINK_15_assignees": {
+        "optimal_topics": 150,
+        "accuracy": 0.23333333333333334
+    },
+    "FLINK_20_assignees": {
+        "optimal_topics": 130,
+        "accuracy": 0.196875
+    },
+    "GEODE_5_assignees": {
+        "optimal_topics": 90,
+        "accuracy": 0.3
+    },
+    "HDDS_5_assignees": {
+        "optimal_topics": 50,
+        "accuracy": 0.4375
+    },
+    "IGNITE_5_assignees": {
+        "optimal_topics": 120,
+        "accuracy": 0.35
+    },
+    "IMPALA_5_assignees": {
+        "optimal_topics": 130,
+        "accuracy": 0.425
+    },
+    "MESOS_5_assignees": {
+        "optimal_topics": 70,
+        "accuracy": 0.375
+    },
+    "OAK_5_assignees": {
+        "optimal_topics": 16,
+        "accuracy": 0.375
+    }
+}
