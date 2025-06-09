@@ -5,6 +5,7 @@ collection_users = 'users'
 collection_projects = 'projects'
 data_out_folder = r"C:\Users\hp\Desktop\Module-3-Task-assigning\data\data_output"
 trainable_data_folder = r"C:\Users\hp\Desktop\Module-3-Task-assigning\data\data_output\step3_2_processed_data"
+embeddings_folder = r"C:\Users\hp\Desktop\Module-3-Task-assigning\data\embeddings"
 min_assignees = 5
 result_folder = r"results"
 min_issues_per_assignee = 80
