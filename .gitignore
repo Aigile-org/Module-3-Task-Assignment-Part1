@@ -3,5 +3,4 @@ issues.csv
 issues_limited_user_cols.csv
 *.csv
 glove.6B.100d.txt
-5_apply_classification.py
 /__pycache__/
